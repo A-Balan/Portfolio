@@ -1,0 +1,237 @@
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    /* fonts */
+    --ab-title-font: 'Bebas Neue', sans-serif;
+    --ab-subtitle-font: font-family: 'Fira Sans', sans-serif;
+    --ab-heading-font: 'Bebas Neue', sans-serif;
+    --ab-body-font: 'Roboto', sans-serif;
+
+    /* basic colors */
+    --ab-dark-color: #212121;
+    --ab-light-color: #deeefb;
+    --ab-background-color: rgba(350, 250, 250, 0.8);
+
+    /* text styles */
+    --ab-font-size: 1.2rem;
+    --ab-font-weight: 400;
+    --ab-line-height: 1.5rem;
+    --ab-title-color: var(--ab-dark-color);
+
+    /* Blue theme */
+    --ab-theme-core: #0d6efd;
+    --ab-theme-100: hsl(216, 50%, 91%);
+    --ab-theme-150: hsl(216, 50%, 86%);
+    --ab-theme-200: hsl(216, 50%, 81%);
+    --ab-theme-300: hsl(216, 50%, 71%);
+    --ab-theme-400: hsl(216, 50%, 61%);
+    --ab-theme-500: hsl(216, 50%, 51%);
+    --ab-theme-600: hsl(216, 50%, 41%);
+    --ab-theme-700: hsl(216, 50%, 31%);
+    --ab-theme-800: hsl(216, 50%, 21%);
+    --ab-theme-850: hsl(216, 50%, 16%);
+    --ab-theme-900: hsl(216, 50%, 11%);
+
+    /* Yellow Theme */
+    --ab-theme-core: #0d6efd;
+    --ab-yellow-100: hsl(46, 95%, 91%);
+    --ab-yellow-150: hsl(46, 95%, 86%);
+    --ab-yellow-200: hsl(46, 95%, 81%);
+    --ab-yellow-300: hsl(46, 95%, 71%);
+    --ab-yellow-400: hsl(46, 95%, 46%);
+    --ab-yellow-500: hsl(46, 95%, 51%);
+    --ab-yellow-600: hsl(46, 95%, 41%);
+    --ab-yellow-700: hsl(46, 95%, 31%);
+    --ab-yellow-800: hsl(46, 95%, 21%);
+    --ab-yellow-850: hsl(46, 95%, 16%);
+    --ab-yellow-900: hsl(46, 95%, 11%);
+
+    /* Yellow Theme */
+    --ab-theme-core: #0d6efd;
+    --ab-y2-100: hsl(54, 80%, 91%);
+    --ab-y2-150: hsl(54, 80%, 86%);
+    --ab-y2-200: hsl(54, 80%, 81%);
+    --ab-y2-300: hsl(54, 80%, 71%);
+    --ab-y2-400: hsl(54, 80%, 54%);
+    --ab-y2-500: hsl(54, 80%, 51%);
+    --ab-y2-600: hsl(54, 80%, 41%);
+    --ab-y2-700: hsl(54, 80%, 31%);
+    --ab-y2-800: hsl(54, 80%, 21%);
+    --ab-y2-850: hsl(54, 80%, 16%);
+    --ab-y2-900: hsl(54, 80%, 11%);
+}
+}
+
+/* Start: Element Overrides */
+body {
+    font-family: var(--ab-body-font);
+    font-size: var(--ab-font-size);
+    font-weight: var(--ab-font-weight);
+    line-height: var(--ab-dark-color);
+    background: var(--ab-background-color);
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-family: var(--ab-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--ab-title-color);
+    letter-spacing: .1rem;
+}
+
+a {
+    color: var(--ab-theme-500);
+}
+
+a:hover {
+    color: var(--ab-theme-400);
+}
+
+main {
+    margin-bottom: 5rem;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--ab-theme-600);
+    --bs-btn-border-color: var(--ab-theme-600);
+    --bs-btn-hover-bg: var(--ab-theme-700);
+    --bs-btn-hover-color: var(--ab-theme-700);
+}
+
+/* End: Element Overrides */
+
+/* Begin: Landing Section-Home */
+
+#home {
+    background-color: var(--ab-theme-900);
+    background-image: url(/img/irises.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#homeCover {
+    backdrop-filter: brightness(0.80) blur(1.3px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTitle,
+.subTitle {
+    color: var(--ab-light-color);
+    text-transform: uppercase;
+}
+
+.mainTitle {
+    font-family: var(--ab-title-font);
+    font-size: 8rem;
+    line-height: 1rem;
+}
+
+.subTitle {
+    font-family: var(--ab-subtitle-font);
+    font-size: 1.28rem;
+    letter-spacing: .1rem;
+    line-height: 1.1rem;
+    font-weight: 300;
+}
+
+.mainLogo {
+    height: .5em;
+    padding-left: .1em;
+}
+
+/* End Landing Section-Home */
+
+/* Start: Main Content */
+
+.section-page:nth-child(even) {
+    background-color: var(--ab-yellow-100);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-page:nth-child(odd) {
+    background-color: var(--ab-theme-150);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* End: Main Content */
+
+/* Start: footer styles */
+.socialIcons {
+    font-size: 2rem;
+    transition: color 0.25s;
+}
+
+.socialIcons:hover {
+    color: var(--ab-theme-core);
+}
+
+footer.fixed-bottom {
+    background-color: var(--ab-theme-200);
+}
+
+footer .card {
+    background-color: var(--ab-theme-300);
+}
+
+/* End: footer styles */
+
+/* Start: media queries */
+
+/*/ Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .mainTitle {
+        font-size: 7rem;
+        line-height: 5.5rem;
+    }
+
+    .subTitle {
+        font-size: 1.7rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.18rem;
+        padding-top: .25rem;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
+
+/* End: media queries */
