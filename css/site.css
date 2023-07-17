@@ -48,21 +48,8 @@ font-family: 'Roboto', sans-serif; */
     --ab-yellow-850: hsl(46, 95%, 16%);
     --ab-yellow-900: hsl(46, 95%, 11%);
 
-    /* Yellow Theme */
-    --ab-theme-core: #0d6efd;
-    --ab-y2-100: hsl(54, 80%, 91%);
-    --ab-y2-150: hsl(54, 80%, 86%);
-    --ab-y2-200: hsl(54, 80%, 81%);
-    --ab-y2-300: hsl(54, 80%, 71%);
-    --ab-y2-400: hsl(54, 80%, 54%);
-    --ab-y2-500: hsl(54, 80%, 51%);
-    --ab-y2-600: hsl(54, 80%, 41%);
-    --ab-y2-700: hsl(54, 80%, 31%);
-    --ab-y2-800: hsl(54, 80%, 21%);
-    --ab-y2-850: hsl(54, 80%, 16%);
-    --ab-y2-900: hsl(54, 80%, 11%);
 }
-}
+
 
 /* Start: Element Overrides */
 body {
@@ -171,16 +158,51 @@ section {
 
 /* Start: Main Content */
 
-.section-page:nth-child(even) {
-    background-color: var(--ab-yellow-100);
+.section-page {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    position: relative;
+    overflow: visible;
+    margin-top:-3rem;
+}
+
+.section-page:nth-child(even) {
+    background-color: var(--ab-theme-100);
+}
+
+.section-page:nth-child(even)>.container::after {
+    background-color: var(--ab-theme-100);
 }
 
 .section-page:nth-child(odd) {
     background-color: var(--ab-theme-150);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+}
+
+.section-page:nth-child(odd)>.container::after {
+    background-color: var(--ab-theme-150);
+}
+
+/*section dividers to play with */
+
+.section-page>.container::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height: 3rem;
+background-color: solid 2px red;
+background-color: rgba(250, 0, 0, 0.5);
+/* clip-path: ellipse(50% 100% at top center); */
+z-index: 1;
+}
+
+.section-page:nth-child(even)>.container::after {
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.section-page:nth-child(odd)>.container::after {
+    clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
 }
 
 /* End: Main Content */
@@ -196,11 +218,11 @@ section {
 }
 
 footer.fixed-bottom {
-    background-color: var(--ab-theme-200);
+    background-color: var(--ab-yellow-600);
 }
 
 footer .card {
-    background-color: var(--ab-theme-300);
+    background-color: var(--ab-theme-800);
 }
 
 /* End: footer styles */

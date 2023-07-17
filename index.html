@@ -18,26 +18,112 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@100;200;300;400;500;800&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <!-- devicons.dev -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="/css/site.css">
 
+    <link rel="stylesheet" href="/css/iconCards.css">
+
+    <link rel="stylesheet" href="/css/themecolors.css">
+
+    <link rel="stylesheet" href="/css/blogCard.css">
+
+    <link rel="stylesheet" href="/css/menuPill.css">
+
+    <!-- hovercard -->
+
+    <link rel="stylesheet" href="/css/hovercard.css">
+
     <!-- favicon -->
     <!-- Change to our favicon -->
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon" />
 </head>
 
 <body>
-    <main>
+    <!-- start pill navbar -->
+    <div id="menuPillContainer" class="navbar navbar-dark">
+        <nav id="menuPill" class="navbar-nav text-light">
+
+            <div class="nav-item">
+                <a href="#home" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <span class="menu-label">Home</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="#about" class="nav-link"  data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </div>
+                    <span class="menu-label">About Me</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="#skills" class="nav-link"  data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-wrench-adjustable"></i>
+                    </div>
+                    <span class="menu-label">Skills</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="#projects" class="nav-link"  data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-braces-asterisk"></i>
+                    </div>
+                    <span class="menu-label">Projects</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="#blog" class="nav-link"  data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <span class="menu-label">Blog</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="#contact" class="nav-link"  data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                    <div class="icon-container">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <span class="menu-label">Contact</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <!-- end pill navbar -->
+    <!-- start main content -->
+    <main data-bs-spy="scroll" data-bs-target="#menuPill">
+        <!-- landing screen -->
         <section id="home">
             <div id="homeCover">
                 <div class="mainHeader">
-                    <div class="mainTitle">
-                        <img src="/img/anya2Navy.svg" class="img-fluid" style="width: 50rem">
-                        <!-- <a href="#contact" class="btn btn-primary mt-3 w-100">CONTACT ME</a> -->
+                    <div class="mainTitle text-center">
+                        <img src="/img/alan(4).png" class="img-fluid w-75">
+                        <a href="#contact" class="btn btn-primary mt-3 w-50">CONTACT ME</a>
                     </div>
                 </div>
         </section>
 
+        <!-- about me section -->
         <section id="about" class="section-page">
             <div class="container text-center">
                 <h2 class="display-1 mb-5">About Me</h2>
@@ -53,28 +139,520 @@
             </div>
         </section>
 
+        <!-- skills section -->
         <section id="skills" class="section-page">
-            <h2>Skills</h2>
+            <div class="container">
+                <h2 class="text-center display-1 mb-5">What I Use</h2>
+                <div class="row gy-5">
+                    <div class="col-12 col-lg-6">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- icon of card-->
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+                                </div>
+                                <div class="icon dotnet">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- content of card -->
+                                <p>
+                                    I utilize C# to develop full-stack web applications. View my <a
+                                        href="#projects">projects</a> section to see examples of how I implement C# in
+                                    my work. I use established design patterns and frameworks such as ASP.NET Core Web
+                                    and MVC to create websites that meet project objectives.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- icon of card-->
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+
+                                </div>
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+
+                                </div>
+
+                                <div class="icon">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- content of card -->
+                                <p>
+                                    I use C# on a daily basis to build full-stack web applications. You can see my work
+                                    implementing C# in my <a href="#projects">projects</a> section!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- icon of card-->
+                                <div class="icon">
+
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+
+                                </div>
+
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- content of card -->
+                                <p>
+                                    I use C# on a daily basis to build full-stack web applications. You can see my work
+                                    implementing C# in my <a href="#projects">projects</a> section!
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- icon of card-->
+                                <div class="icon">
+
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+
+                                </div>
+
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- content of card -->
+                                <p>
+                                    I use C# on a daily basis to build full-stack web applications. You can see my work
+                                    implementing C# in my <a href="#projects">projects</a> section!
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="icon-card">
+                            <div class="icon-card-header">
+                                <!-- icon of card-->
+                                <div class="icon git">
+
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+
+                                </div>
+                                <div class="icon github">
+
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+
+                                </div>
+                            </div>
+                            <div class="icon-card-body">
+                                <!-- content of card -->
+                                <p>
+                                    I use C# on a daily basis to build full-stack web applications. You can see my work
+                                    implementing C# in my <a href="#projects">projects</a> section!
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="challenges" class="section-page">
-            <h2>Challenges</h2>
+        <!-- projects section-->
+        <section id="projects" class="section-page">
+            <div class="container">
+                <h2>Projects</h2>
+                <p class="my-3">Showcasing complete functional projects demonstrates what I can bring to your project. I
+                    built these projects from the ground up to demonstrate skill with front end, back end, security, and
+                    database development. All these projects are full-stack web applications that are published so that
+                    you
+                    can demo them easily! <a href="#contact">Contact</a> me for a complete code walk-through.</p>
+
+                <!-- row of 3 main projects -->
+
+                <div class="row gy-5 mt-5 row-cols-1 row-cols-lg-3">
+                    <!-- bug tracker card -->
+                    <div class="col">
+                        <div class="hc-wrapper">
+                            <div class="hc-card">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="/img/logos/BugTracker_600.jpg" />
+                                    <img src="/img/logos/BugTracker_200.jpg" />
+                                </picture>
+                                <div class="hc-content">
+                                    <p>
+                                        A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
+                                    </p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#bugTrackerModal">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contact pro card -->
+                    <div class="col">
+                        <div class="hc-wrapper">
+                            <div class="hc-card">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="/img/logos/Contact_Pro.png" />
+                                    <img src="/img/logos/Contact_Pro.png" />
+                                </picture>
+                                <div class="hc-content">
+                                    <p>
+                                        A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
+                                    </p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#contactProModal">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tech talk card -->
+                    <div class="col">
+                        <div class="hc-wrapper">
+                            <div class="hc-card">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="/img/logos/Tech_Talk.png" />
+                                    <img src="/img/logos/Tech_Talk.png" />
+                                </picture>
+                                <div class="hc-content">
+                                    <p>
+                                        A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
+                                    </p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#techTalkModal">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h2 class="mt-5">Smaller Projects</h2>
+                <p class="my-3">Showcasing complete functional projects demonstrates what I can bring to your project. I
+                    built these projects from the ground up to demonstrate skill with front end, back end, security, and
+                    database development. All these projects are full-stack web applications that are published so that
+                    you
+                    can demo them easily! <a href="#contact">Contact</a> me for a complete code walk-through.</p>
+
+                <!-- row of 6 smaller projects -->
+
+                <div class="row gy-5 mt-5 row-cols-1 row-cols-lg-3">
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="hc-wrapper">
+                            <div class="hc-card">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="/img/logos/LoanShark_600.png" />
+                                    <img src="/img/logos/LoanShark_200.png" />
+                                </picture>
+                                <div class="hc-content">
+                                    <p>
+                                        A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
+                                    </p>
+                                    <button type="button" class="btn btn-primary"></button><a href="#">Learn
+                                        More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="hc-wrapper">
+                            <div class="hc-card">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="/img/logos/tacocat_600.png" />
+                                    <img src="/img/logos/tacocat_200.png" />
+                                </picture>
+                                <div class="hc-content">
+                                    <p>
+                                        A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
+                                    </p>
+                                    <button type="button" class="btn btn-primary"><a href="#">Learn More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="hc-wrapper">
+                            <div class="hc-card">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="/img/logos/Tasker_600.png" />
+                                    <img src="/img/logos/Tasker_200.png" />
+                                </picture>
+                                <div class="hc-content">
+                                    <p>
+                                        A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
+                                    </p>
+                                    <button type="button" class="btn btn-primary"><a href="#">Learn More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="hc-wrapper">
+                            <div class="hc-card">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="/img/logos/Superdog_600.jpg" />
+                                    <img src="/img/logos/Superdog_200.jpg" />
+                                </picture>
+                                <div class="hc-content">
+                                    <p>
+                                        A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
+                                    </p>
+                                    <button type="button" class="btn btn-primary"><a href="#">Learn More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="hc-wrapper">
+                            <div class="hc-card">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="/img/logos/fizzbuzz_600.jpg" />
+                                    <img src="/img/logos/fizzbuzz_200.jpg" />
+                                </picture>
+                                <div class="hc-content">
+                                    <p>
+                                        A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
+                                    </p>
+                                    <button type="button" class="btn btn-primary"><a href="#">Learn More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="hc-wrapper">
+                            <div class="hc-card">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="/img/logos/Notary_600.jpg" />
+                                    <img src="/img/logos/Notary_600.jpg" />
+                                </picture>
+                                <div class="hc-content">
+                                    <p>
+                                        A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
+                                    </p>
+                                    <button type="button" class="btn btn-primary"><a href="#">Learn More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
+
+        <!-- blog -->
         <section id="blog" class="section-page">
-            <h2>Blog</h2>
-        </section>
+            <div class="container">
+                <h2 class="display-1 mb-5 text-center">
+                    Blog Stuff
+                </h2>
+                <p>I update this blog weekly. Featuring coding challenges and tech updates.</p>
+                <article class="card mb-4 blog-article">
+                    <div class="row blog-row g-0">
+                        <!-- blog image -->
+                        <div class="col-lg-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img class="blog-image" alt="Blog post image" src="/img/Blog/Blog_FlyingGirl.jpg">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">January</div>
+                            </div>
+                        </div>
+                        <!-- title and text -->
+                        <div class="col-lg-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h3 class="card-title">MAKE SQL QUERIES FLY</h3>
+                                <p class="card-text line-clamp"> Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Laboriosam, iusto. Facere pariatur optio, ipsam laboriosam a incidunt
+                                    asperiores, modi magni labore recusandae aperiam voluptas, eum dignissimos?
+                                    Architecto ratione repellat quas.</p>
+                                <div>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 3 days ago</small>
+                                </p>
+                            </div>
+                        </div>
 
+                    </div>
+                </article>
+
+                <article class="card mb-4 blog-article">
+                    <div class="row blog-row g-0">
+                        <!-- blog image -->
+                        <div class="col-lg-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img class="blog-image" alt="Blog post image" src="/img/Blog/Blog_Database.jpg">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">12</div>
+                                <div class="blog-month">July</div>
+                            </div>
+                        </div>
+                        <!-- title and text -->
+                        <div class="col-lg-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h3 class="card-title">MAKE SQL QUERIES FLY</h3>
+                                <p class="card-text line-clamp"> Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Laboriosam, iusto. Facere pariatur optio, ipsam laboriosam a incidunt
+                                    asperiores, modi magni labore recusandae aperiam voluptas, eum dignissimos?
+                                    Architecto ratione repellat quas.</p>
+                                <div>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 3 days ago</small>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="card mb-4 blog-article">
+                    <div class="row blog-row g-0">
+                        <!-- blog image -->
+                        <div class="col-lg-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img class="blog-image" alt="Blog post image" src="/img/Blog/Blog_CodeTag.jpg">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">13</div>
+                                <div class="blog-month">July</div>
+                            </div>
+                        </div>
+                        <!-- title and text -->
+                        <div class="col-lg-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h3 class="card-title">MAKE SQL QUERIES FLY</h3>
+                                <p class="card-text line-clamp"> Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Laboriosam, iusto. Facere pariatur optio, ipsam laboriosam a incidunt
+                                    asperiores, modi magni labore recusandae aperiam voluptas, eum dignissimos?
+                                    Architecto ratione repellat quas.</p>
+                                <div>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 3 days ago</small>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="card mb-4 blog-article">
+                    <div class="row blog-row g-0">
+                        <!-- blog image -->
+                        <div class="col-lg-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img class="blog-image" alt="Blog post image" src="/img/Blog/Blog_DecisionRoad.jpg">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">14</div>
+                                <div class="blog-month">July</div>
+                            </div>
+                        </div>
+                        <!-- title and text -->
+                        <div class="col-lg-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h3 class="card-title">MAKE SQL QUERIES FLY</h3>
+                                <p class="card-text line-clamp"> Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Laboriosam, iusto. Facere pariatur optio, ipsam laboriosam a incidunt
+                                    asperiores, modi magni labore recusandae aperiam voluptas, eum dignissimos?
+                                    Architecto ratione repellat quas.</p>
+                                <div>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 3 days ago</small>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- contact section -->
         <section id="contact" class="section-page">
             <h2>Contact Me</h2>
+            <div class="card card-body">
+                <form action="#">
+                    <div class="row row-cols-1 mt-2">
+                        <div class="col col-md-6">
+                            <label for="FirstName" class="form-label">First Name</label>
+                            <input aria-label="First Name" class="form-control" name="FirstName" id="FirstName"
+                                type="text" placeholder="First Name" required />
+                        </div>
+                        <div class="col col-md-6 mt-2">
+                            <label for="LastName" class="form-label">Last Name</label>
+                            <input aria-label="Last Name" class="form-control" name="LastName" id="LastName" type="text"
+                                placeholder="Last Name" required />
+                        </div>
+                        <div class="col col-md-6 mt-2">
+                            <label for="Email" class="form-label">Email</label>
+                            <input aria-label="Email" class="form-control" name="Email" id="Email" type="email"
+                                placeholder="email" required />
+                        </div>
+                        <div class="col col-md-6 mt-2">
+                            <label for="Phone" class="form-label">Phone</label>
+                            <input aria-label="Phone" class="form-control" name="Phone" id="Phone" type="tel"
+                                placeholder="Phone" />
+                        </div>
+                        <div class="col text-start mt-2">
+                            <label for="Subject" class="form-label">Subject</label>
+                            <input aria-label="Subject" class="form-control" name="Subject" id="Subject" type="text"
+                                placeholder="Subject" required />
+                        </div>
+                        <div class="col text-start mt-2">
+                            <label for="Message" class="form-label">Message</label>
+                            <textarea aria-label="Message" class="form-control" name="Message" id="Message" type="tel"
+                                placeholder="Message" rows="4"></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
         </section>
 
     </main>
+    <!-- footer -->
     <footer class="py-3 fixed-bottom" data-bs-theme="dark">
         <div class="container-fluid">
             <div class="row align-items-center g-3">
                 <div class="col-3">
+                    <img src="/img/waves mark.png" alt="Logo" height="40">
                     <img src="/img/anya(1).png" alt="Logo" height="40">
+
                 </div>
                 <div class="col-9 col-lg-6 d-flex justify-content-end justify-content-lg-center">
                     <div class="card shadow">
@@ -98,9 +676,332 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modals -->
+    <!-- Bug tracker modal -->
+    <div class="modal fade" id="bugTrackerModal" tabindex="-1" aria-label="Bug Tracker Modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Bug Tracker</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <!-- carousel with indicators from BS! -->
+                            <div id="bugTrackerCarousel" class="carousel slide" data-bs-theme="dark">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#bugTrackerCarousel" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#bugTrackerCarousel" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#bugTrackerCarousel" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#bugTrackerCarousel" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/img/logos/BugTracker_600.jpg" class="d-block w-100" alt="Logo">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
+                                            alt="Screenshot 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/screenshots/BugTrackerScreen2.jpg" class="d-block w-100"
+                                            alt="Screenshot 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/screenshots/BugTrackerScreen3.jpg" class="d-block w-100"
+                                            alt="Screenshot 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#bugTrackerCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#bugTrackerCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-7">
+                            <!-- About the Project -->
+                            <h3>Bug Tracker</h3>
+                            <p>BugBox is a software defect tracking system. Commonly known as a bug
+                                tracker. Insectcide is built with ASP.NET, MVC, C# and SQL. A role based
+                                security system was implemented to create permission based roles. The roles of
+                                Admin , Project Manager, Developer and Submitter restrict what the user can see
+                                and do. The software allows for users to submit tickets and those tickets are
+                                tracked through status from Open to Complete.</p>
+                            <p> The system was built with C# and .Net in 3 weeks. The front end was developed
+                                with HTML, Javascript and Bootstrap. The back-end utlizies MVC and C#. The
+                                database was built with SQL Server and hosted on Azure. Please visit the site
+                                and try it out.</p>
+
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4>Project Type:</h4>
+                                    <span>Web Application</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <h4>Technologies:</h4>
+                                    <p class="fs-1">
+                                        <i class="devicon-csharp-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="C sharp"></i>
+                                        <i class="devicon-postgresql-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="postgreSQL"></i>
+                                        <i class="devicon-dotnetcore-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title=".NET Core"></i>
+                                        <i class="devicon-javascript-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="JavaScript"></i>
+                                        <i class="devicon-css3-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="CSS3 "></i>
+                                        <i class="devicon-bootstrap-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="Bootstrap"></i>
+                                        <i class="devicon-html5-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="HTML5"></i>
+                                    </p>
+                                </li>
+                                <li class="list-group-item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+
+    <div class="modal fade" id="contactProModal" tabindex="-1" aria-label="Contact Pro Modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Contact Pro</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <!-- carousel with indicators from BS! -->
+                            <div id="contactProCarousel" class="carousel slide" data-bs-theme="dark">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#contactProCarousel" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#contactProCarousel" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#contactProCarousel" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#contactProCarousel" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/img/logos/Contact_Pro.png" class="d-block w-100" alt="Logo">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
+                                            alt="Screenshot 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/screenshots/BugTrackerScreen2.jpg" class="d-block w-100"
+                                            alt="Screenshot 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/screenshots/BugTrackerScreen3.jpg" class="d-block w-100"
+                                            alt="Screenshot 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#contactProCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#contactProCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-7">
+                            <!-- About the Project -->
+                            <h3>Bug Tracker</h3>
+                            <p>BugBox is a software defect tracking system. Commonly known as a bug
+                                tracker. Insectcide is built with ASP.NET, MVC, C# and SQL. A role based
+                                security system was implemented to create permission based roles. The roles of
+                                Admin , Project Manager, Developer and Submitter restrict what the user can see
+                                and do. The software allows for users to submit tickets and those tickets are
+                                tracked through status from Open to Complete.</p>
+                            <p> The system was built with C# and .Net in 3 weeks. The front end was developed
+                                with HTML, Javascript and Bootstrap. The back-end utlizies MVC and C#. The
+                                database was built with SQL Server and hosted on Azure. Please visit the site
+                                and try it out.</p>
+
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4>Project Type:</h4>
+                                    <span>Web Application</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <h4>Technologies:</h4>
+                                    <p class="fs-1">
+                                        <i class="devicon-csharp-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="C sharp"></i>
+                                        <i class="devicon-postgresql-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="postgreSQL"></i>
+                                        <i class="devicon-dotnetcore-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title=".NET Core"></i>
+                                        <i class="devicon-javascript-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="JavaScript"></i>
+                                        <i class="devicon-css3-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="CSS3 "></i>
+                                        <i class="devicon-bootstrap-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="Bootstrap"></i>
+                                        <i class="devicon-html5-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="HTML5"></i>
+                                    </p>
+                                </li>
+                                <li class="list-group-item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+
+    <div class="modal fade" id="techTalkModal" tabindex="-1" aria-label="Bug Tracker Modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Tech Talk</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <!-- carousel with indicators from BS! -->
+                            <div id="techTalkCarousel" class="carousel slide" data-bs-theme="dark">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#techTalkCarousel" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#techTalkCarousel" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#techTalkCarousel" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#techTalkCarousel" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/img/logos/Tech_Talk.png" class="d-block w-100" alt="Logo">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
+                                            alt="Screenshot 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/screenshots/BugTrackerScreen2.jpg" class="d-block w-100"
+                                            alt="Screenshot 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/screenshots/BugTrackerScreen3.jpg" class="d-block w-100"
+                                            alt="Screenshot 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#techTalkCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#techTalkCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-7">
+                            <!-- About the Project -->
+                            <h3>Bug Tracker</h3>
+                            <p>BugBox is a software defect tracking system. Commonly known as a bug
+                                tracker. Insectcide is built with ASP.NET, MVC, C# and SQL. A role based
+                                security system was implemented to create permission based roles. The roles of
+                                Admin , Project Manager, Developer and Submitter restrict what the user can see
+                                and do. The software allows for users to submit tickets and those tickets are
+                                tracked through status from Open to Complete.</p>
+                            <p> The system was built with C# and .Net in 3 weeks. The front end was developed
+                                with HTML, Javascript and Bootstrap. The back-end utlizies MVC and C#. The
+                                database was built with SQL Server and hosted on Azure. Please visit the site
+                                and try it out.</p>
+
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4>Project Type:</h4>
+                                    <span>Web Application</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <h4>Technologies:</h4>
+                                    <p class="fs-1">
+                                        <i class="devicon-csharp-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="C sharp"></i>
+                                        <i class="devicon-postgresql-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="postgreSQL"></i>
+                                        <i class="devicon-dotnetcore-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title=".NET Core"></i>
+                                        <i class="devicon-javascript-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="JavaScript"></i>
+                                        <i class="devicon-css3-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="CSS3 "></i>
+                                        <i class="devicon-bootstrap-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="Bootstrap"></i>
+                                        <i class="devicon-html5-plain colored" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" data-bs-title="HTML5"></i>
+                                    </p>
+                                </li>
+                                <li class="list-group-item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
+    <!-- tootltips -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>
