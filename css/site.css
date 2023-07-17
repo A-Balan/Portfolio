@@ -112,7 +112,7 @@ section {
 
 #home {
     background-color: var(--ab-theme-900);
-    background-image: url(/img/irises.jpg);
+    background-image: url(/img/clouds.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,7 +120,7 @@ section {
 }
 
 #homeCover {
-    backdrop-filter: brightness(0.80) blur(1.3px);
+    backdrop-filter: brightness(0.80) blur(0px);
     height: 100%;
     width: 100%;
     position: absolute;
