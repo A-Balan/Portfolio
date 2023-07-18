@@ -19,22 +19,6 @@ font-family: 'Roboto', sans-serif; */
     --ab-font-weight: 400;
     --ab-line-height: 1.5rem;
     --ab-title-color: var(--ab-dark-color);
-
-
-    /* Yellow orange */
-    --ab-orange-core: #0d6efd;
-    --ab-yellow-100: hsl(46, 95%, 91%);
-    --ab-yellow-150: hsl(46, 95%, 86%);
-    --ab-yellow-200: hsl(46, 95%, 81%);
-    --ab-yellow-300: hsl(46, 95%, 71%);
-    --ab-yellow-400: hsl(46, 95%, 46%);
-    --ab-yellow-500: hsl(46, 95%, 51%);
-    --ab-yellow-600: hsl(46, 95%, 41%);
-    --ab-yellow-700: hsl(46, 95%, 31%);
-    --ab-yellow-800: hsl(46, 95%, 21%);
-    --ab-yellow-850: hsl(46, 95%, 16%);
-    --ab-yellow-900: hsl(46, 95%, 11%);
-
 }
 
 
@@ -67,7 +51,7 @@ h1,
 }
 
 a {
-    color: var(--ab-orange-500);
+    color: var(--ab-grey-300);
 }
 
 a:hover {
@@ -87,10 +71,10 @@ section {
 }
 
 .btn-primary {
-    --bs-btn-bg: var(--ab-orange-600);
-    --bs-btn-border-color: var(--ab-orange-600);
-    --bs-btn-hover-bg: var(--ab-orange-700);
-    --bs-btn-hover-color: var(--ab-orange-700);
+    --bs-btn-bg: var(--ab-grey-600);
+    --bs-btn-border-color: var(--ab-grey-600);
+    --bs-btn-hover-bg: var(--ab-grey-700);
+    --bs-btn-hover-color: var(--ab-grey-700);
 }
 
 /* End: Element Overrides */
@@ -98,7 +82,7 @@ section {
 /* Begin: Landing Section-Home */
 
 #home {
-    background-color: var(--ab-orange-900);
+    background-color: var(--ab-grey-900);
     background-image: url(/img/clouds.jpg);
     background-size: cover;
     background-position: center;
@@ -198,7 +182,7 @@ z-index: 1;
 .socialIcons {
     font-size: 2rem;
     transition: color 0.25s;
-    color: var(--ab-orange-600)
+    color: var(--ab-grey-600)
 }
 
 .socialIcons:hover {
@@ -206,12 +190,9 @@ z-index: 1;
 }
 
 footer.fixed-bottom {
-    background-color: #a87d48;
+    background-color: #333232;
 }
 
-footer .card {
-    background-color: var(--ab-orange-800);
-}
 
 /* End: footer styles */
 
