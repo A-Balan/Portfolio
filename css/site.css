@@ -20,22 +20,9 @@ font-family: 'Roboto', sans-serif; */
     --ab-line-height: 1.5rem;
     --ab-title-color: var(--ab-dark-color);
 
-    /* Blue theme */
-    --ab-theme-core: #0d6efd;
-    --ab-theme-100: hsl(216, 50%, 91%);
-    --ab-theme-150: hsl(216, 50%, 86%);
-    --ab-theme-200: hsl(216, 50%, 81%);
-    --ab-theme-300: hsl(216, 50%, 71%);
-    --ab-theme-400: hsl(216, 50%, 61%);
-    --ab-theme-500: hsl(216, 50%, 51%);
-    --ab-theme-600: hsl(216, 50%, 41%);
-    --ab-theme-700: hsl(216, 50%, 31%);
-    --ab-theme-800: hsl(216, 50%, 21%);
-    --ab-theme-850: hsl(216, 50%, 16%);
-    --ab-theme-900: hsl(216, 50%, 11%);
 
-    /* Yellow Theme */
-    --ab-theme-core: #0d6efd;
+    /* Yellow orange */
+    --ab-orange-core: #0d6efd;
     --ab-yellow-100: hsl(46, 95%, 91%);
     --ab-yellow-150: hsl(46, 95%, 86%);
     --ab-yellow-200: hsl(46, 95%, 81%);
@@ -75,16 +62,16 @@ h1,
     font-family: var(--ab-heading-font);
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--ab-title-color);
+    color: #343333;
     letter-spacing: .1rem;
 }
 
 a {
-    color: var(--ab-theme-500);
+    color: var(--ab-orange-500);
 }
 
 a:hover {
-    color: var(--ab-theme-400);
+    color: #ffe612;
 }
 
 main {
@@ -100,10 +87,10 @@ section {
 }
 
 .btn-primary {
-    --bs-btn-bg: var(--ab-theme-600);
-    --bs-btn-border-color: var(--ab-theme-600);
-    --bs-btn-hover-bg: var(--ab-theme-700);
-    --bs-btn-hover-color: var(--ab-theme-700);
+    --bs-btn-bg: var(--ab-orange-600);
+    --bs-btn-border-color: var(--ab-orange-600);
+    --bs-btn-hover-bg: var(--ab-orange-700);
+    --bs-btn-hover-color: var(--ab-orange-700);
 }
 
 /* End: Element Overrides */
@@ -111,7 +98,7 @@ section {
 /* Begin: Landing Section-Home */
 
 #home {
-    background-color: var(--ab-theme-900);
+    background-color: var(--ab-orange-900);
     background-image: url(/img/clouds.jpg);
     background-size: cover;
     background-position: center;
@@ -120,7 +107,7 @@ section {
 }
 
 #homeCover {
-    backdrop-filter: brightness(0.80) blur(0px);
+    backdrop-filter: brightness(1.0) blur(0px);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -167,19 +154,19 @@ section {
 }
 
 .section-page:nth-child(even) {
-    background-color: var(--ab-theme-100);
+    background-color: var(--ab-grey-100);
 }
 
 .section-page:nth-child(even)>.container::after {
-    background-color: var(--ab-theme-100);
+    background-color: var(--ab-grey-150);
 }
 
 .section-page:nth-child(odd) {
-    background-color: var(--ab-theme-150);
+    background-color: var(--ab-grey-100);
 }
 
 .section-page:nth-child(odd)>.container::after {
-    background-color: var(--ab-theme-150);
+    background-color: var(--ab-grey-150);
 }
 
 /*section dividers to play with */
@@ -211,18 +198,19 @@ z-index: 1;
 .socialIcons {
     font-size: 2rem;
     transition: color 0.25s;
+    color: var(--ab-orange-600)
 }
 
 .socialIcons:hover {
-    color: var(--ab-theme-core);
+    color: #ffe612;
 }
 
 footer.fixed-bottom {
-    background-color: var(--ab-yellow-600);
+    background-color: #a87d48;
 }
 
 footer .card {
-    background-color: var(--ab-theme-800);
+    background-color: var(--ab-orange-800);
 }
 
 /* End: footer styles */
