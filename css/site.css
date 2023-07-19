@@ -137,20 +137,14 @@ section {
     margin-top:-3rem;
 }
 
-.section-page:nth-child(even) {
-    background-color: var(--ab-grey-100);
-}
-
+.section-page:nth-child(even),
 .section-page:nth-child(even)>.container::after {
-    background-color: var(--ab-grey-150);
+    background-color: var(--ab-grey-300);
 }
 
-.section-page:nth-child(odd) {
-    background-color: var(--ab-grey-100);
-}
-
+.section-page:nth-child(odd),
 .section-page:nth-child(odd)>.container::after {
-    background-color: var(--ab-grey-150);
+    background-color: var(--ab-grey-200);
 }
 
 /*section dividers to play with */
