@@ -39,7 +39,6 @@
     <link rel="stylesheet" href="/css/hovercard.css">
 
     <!-- favicon -->
-    <!-- Change to our favicon -->
     <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon" />
 </head>
 
@@ -59,8 +58,8 @@
             </div>
 
             <div class="nav-item">
-                <a href="#about" class="nav-link"  data-bs-toggle="tooltip" data-bs-placement="bottom"
-                data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                <a href="#about" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Home" data-bs-custom-class="nav-tooltip">
                     <div class="icon-container">
                         <i class="bi bi-info-circle-fill"></i>
                     </div>
@@ -69,8 +68,8 @@
             </div>
 
             <div class="nav-item">
-                <a href="#skills" class="nav-link"  data-bs-toggle="tooltip" data-bs-placement="bottom"
-                data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                <a href="#skills" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Home" data-bs-custom-class="nav-tooltip">
                     <div class="icon-container">
                         <i class="bi bi-wrench-adjustable"></i>
                     </div>
@@ -79,8 +78,8 @@
             </div>
 
             <div class="nav-item">
-                <a href="#projects" class="nav-link"  data-bs-toggle="tooltip" data-bs-placement="bottom"
-                data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                <a href="#projects" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Home" data-bs-custom-class="nav-tooltip">
                     <div class="icon-container">
                         <i class="bi bi-braces-asterisk"></i>
                     </div>
@@ -89,8 +88,8 @@
             </div>
 
             <div class="nav-item">
-                <a href="#blog" class="nav-link"  data-bs-toggle="tooltip" data-bs-placement="bottom"
-                data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                <a href="#blog" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Home" data-bs-custom-class="nav-tooltip">
                     <div class="icon-container">
                         <i class="bi bi-quote"></i>
                     </div>
@@ -99,8 +98,8 @@
             </div>
 
             <div class="nav-item">
-                <a href="#contact" class="nav-link"  data-bs-toggle="tooltip" data-bs-placement="bottom"
-                data-bs-title="Home" data-bs-custom-class="nav-tooltip">
+                <a href="#contact" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Home" data-bs-custom-class="nav-tooltip">
                     <div class="icon-container">
                         <i class="bi bi-envelope-fill"></i>
                     </div>
@@ -115,14 +114,20 @@
         <!-- landing screen -->
         <section id="home">
             <div id="homeCover">
-                <div class="mainHeader">
-                    <div class="mainTitle text-center">
-                        <img src="/img/alan(4).png" class="img-fluid w-75">
-                        <a href="#contact" class="btn btn-dark">CONTACT ME</a>
+                <div class="row mainHeader ">
+                    <div class="col-9 mainTitle text-end">
+                        <img src="/img/Anyas/title.png" class="img-fluid w-100">
                     </div>
-                </div>
-        </section>
+                    <div class="col-3">
+                        <div class="row gy-1">
+                       <div class="col-12"><img src="/img/Anyas/bird1.png" class="img-fluid" width="60rem"></div>
+                        <div class="col-12"><a href="#contact" class="btn btn-dark">CONTACT</a></div>
+                        <div class="col-12"><a href="#" class="btn btn-dark">RESUME</a></div>
+                    </div>
+                    </div>
 
+        </section>
+        </div>
         <!-- about me section -->
         <section id="about" class="section-page">
             <div class="container text-center">
@@ -290,8 +295,8 @@
                         <div class="hc-wrapper">
                             <div class="hc-card">
                                 <picture>
-                                    <source media="(min-width: 992px)" srcset="/img/Anyas/bugtrax.png"/>
-                                    <img src="/img/Anyas/bugtrax.png"/>
+                                    <source media="(min-width: 992px)" srcset="/img/Anyas/bugtracker.png" />
+                                    <img src="/img/Anyas/bugtracker.png" />
                                 </picture>
                                 <div class="hc-content">
                                     <p>
@@ -365,7 +370,7 @@
                                         A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
                                     </p>
                                     <button type="button" class="btn btn-primary"><a href="#">Learn
-                                        More</a></button>
+                                            More</a></button>
                                 </div>
                             </div>
                         </div>
@@ -426,7 +431,7 @@
                         <div class="hc-wrapper">
                             <div class="hc-card">
                                 <picture>
-                                    <source media="(min-width: 992px)" srcset="/img/Anyas/fizzbuzz.png"/>
+                                    <source media="(min-width: 992px)" srcset="/img/Anyas/fizzbuzz.png" />
                                     <img src="/img/Anyas/fizzbuzz.png" />
                                 </picture>
                                 <div class="hc-content">
@@ -443,7 +448,7 @@
                         <div class="hc-wrapper">
                             <div class="hc-card">
                                 <picture>
-                                    <source media="(min-width: 992px)" srcset="/img/Anyas/hundred.png"/>
+                                    <source media="(min-width: 992px)" srcset="/img/Anyas/hundred.png" />
                                     <img src="/img/Anyas/hundred.png" />
                                 </picture>
                                 <div class="hc-content">
@@ -600,9 +605,9 @@
             </div>
         </section>
         <!-- contact section -->
-        <section id="contact" class="section-page">
+        <section id="contact" class="section-page ">
             <h2>Contact Me</h2>
-            <div class="card card-body">
+            <div class="card card-body text-dark">
                 <form name="PortfolioContact" method="post" netlify>
                     <div class="row row-cols-1 mt-2">
                         <div class="col col-md-6">
@@ -610,10 +615,10 @@
                             <input aria-label="First Name" class="form-control" name="FirstName" id="FirstName"
                                 type="text" placeholder="First Name" required />
                         </div>
-                        <div class="col col-md-6 mt-2">
+                        <div class="col col-md-6">
                             <label for="LastName" class="form-label">Last Name</label>
-                            <input aria-label="Last Name" class="form-control" name="LastName" id="LastName" type="text"
-                                placeholder="Last Name" required />
+                            <input aria-label="Last Name" class="form-control" name="LastName" id="LastName"
+                                type="text" placeholder="Last Name" required />
                         </div>
                         <div class="col col-md-6 mt-2">
                             <label for="Email" class="form-label">Email</label>
@@ -646,23 +651,21 @@
 
     </main>
     <!-- footer -->
-    <footer class=" py-1 fixed-bottom" data-bs-theme="dark">
+    <footer class=" py-1 fixed-bottom flex-nowrap" data-bs-theme="dark">
         <div class="container-fluid">
-            <div class="row align-items-center g-3">
-                <div class="col-3">
-                    <img src="/img/starmark.png" alt="Logo" height="40">
-                    <img src="/img/anya(1).png" alt="Logo" height="40">
+
+            <div class="row row-cols-1 g-3">
+
+                <div class="col-md-4">
+                    <img src="/img/Anyas/bird.png" alt="Logo" height="40">
+                    <img src="/img/Anyas/greyname.png" alt="Logo" height="40">
 
                 </div>
-                <div class="col-9 col-lg-6 d-flex justify-content-end justify-content-lg-center">
-                    <div class="card shadow">
-                        <div class="card-body text-center text-body-emphasis">
-                            <!-- To Do: Change to Our Link -->
-                            Check out my <a href="#">Bug Tracker</a>
-                        </div>
-                    </div>
+                <div class="col-md-4 ">
+                    <!-- To Do: Change to Our Link -->
+                        <div>Check out my <a href="#"> Bug Tracker</a></div>
                 </div>
-                <div class="col d-none d-lg-block col-lg-3 text-end">
+                <div class="col-md-4">
                     <a class="text-decoration-none" href="#">
                         <i class="bi bi-linkedin p-2 socialIcons"></i>
                     </a>
