@@ -73,9 +73,15 @@ section {
 
 .btn-primary {
     --bs-btn-bg: var(--ab-dark-color);
-    --bs-btn-border-color: yellow;
-    --bs-btn-hover-bg: yellow;
+    --bs-btn-border-color: #ffe612;
+    --bs-btn-hover-bg: #ffe612;
     --bs-btn-hover-color: var(--ab-dark-color);
+}
+
+.btn-#ffe612:hover {
+    background-color: #ffe612;
+    color: var(--ab-dark-color);
+    border-color: #ffe612;
 }
 
 /* End: Element Overrides */
@@ -152,8 +158,7 @@ bottom: 0;
 left: 0;
 right: 0;
 height: 3rem;
-background-color: solid 2px red;
-background-color: rgba(250, 0, 0, 0.5);
+
 /* clip-path: ellipse(50% 100% at top center); */
 z-index: 1;
 }
