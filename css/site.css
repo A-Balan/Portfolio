@@ -53,10 +53,12 @@ h1,
 
 a {
     color: var(--ab-link-color);
+    text-decoration: none;
 }
 
 a:hover {
     color: #ffe612;
+    color: var(--ab-link-color);
 }
 
 main {
