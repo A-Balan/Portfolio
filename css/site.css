@@ -190,6 +190,10 @@ footer.fixed-bottom {
     background-color: #333232;
 }
 
+.bugTrackLink {
+    display: none;
+}
+
 
 /* End: footer styles */
 
@@ -208,10 +212,18 @@ footer.fixed-bottom {
         letter-spacing: 0.18rem;
         padding-top: .25rem;
     }
+
+    .bugTrackLink {
+        display: none;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .bugTrackLink {
+        display: block;
+    }
+}
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {}
