@@ -61,10 +61,6 @@ a:hover {
     color: var(--ab-link-color);
 }
 
-main {
-    margin-bottom: 5rem;
-}
-
 section {
     min-height: 100vh;
     display: flex;
