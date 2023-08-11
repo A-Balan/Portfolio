@@ -5,7 +5,7 @@ font-family: 'Roboto', sans-serif; */
 :root {
     /* fonts */
     --ab-title-font: 'Bebas Neue', sans-serif;
-    --ab-subtitle-font:'Fira Sans', sans-serif;
+    --ab-subtitle-font: 'Fira Sans', sans-serif;
     --ab-heading-font: 'Bebas Neue', sans-serif;
     --ab-body-font: 'Roboto', sans-serif;
 
@@ -48,7 +48,7 @@ h1,
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    
+
 }
 
 a {
@@ -71,7 +71,7 @@ section {
 
 .btn-primary {
     --bs-btn-bg: var(--ab-dark-color);
-    --bs-btn-border-color: #fff18d;
+    --bs-btn-border-color: var(--ab-dark-color);
     --bs-btn-hover-bg: #fff18d;
     --bs-btn-hover-color: var(--ab-dark-color);
 }
@@ -143,12 +143,12 @@ section {
     padding-bottom: 5rem;
     position: relative;
     overflow: visible;
-    margin-top:-3rem;
+    margin-top: -3rem;
 }
 
 .section-page:nth-child(even),
 .section-page:nth-child(even)>.container::after {
-    background-color:#424242;
+    background-color: #424242;
 }
 
 .section-page:nth-child(odd),
@@ -159,15 +159,15 @@ section {
 /*section dividers to play with */
 
 .section-page>.container::after {
-content: "";
-position: absolute;
-bottom: 1px;
-left: 0;
-right: 0;
-height: 3rem;
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    height: 3rem;
 
-/* clip-path: ellipse(50% 100% at top center); */
-z-index: 1;
+    /* clip-path: ellipse(50% 100% at top center); */
+    z-index: 1;
 }
 
 .section-page:nth-child(even)>.container::after {
@@ -199,6 +199,10 @@ footer.fixed-bottom {
     display: none;
 }
 
+.responsivePicture {
+    max-width: 60vw;
+}
+
 
 /* End: footer styles */
 
@@ -227,6 +231,10 @@ footer.fixed-bottom {
 @media (min-width: 768px) {
     .bugTrackLink {
         display: block;
+    }
+
+    .responsivePicture {
+        max-width: 40vw;
     }
 }
 
