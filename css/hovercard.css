@@ -13,11 +13,11 @@ So make sure images are higher res, same size and square. Make sure they're larg
     height: 225px;
     border-radius: 15px;
     padding: 1.5rem;
-    background: white;
+    background: #fff18d;
     position: relative;
     display: flex;
     align-items: flex-end;
-    box-shadow: 0px 7px 10px yellow;
+    box-shadow: 0px 7px 10px ;
     transition: transform 0.4s ease-out;
 }
 
@@ -62,7 +62,7 @@ So make sure images are higher res, same size and square. Make sure they're larg
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0.6);
+    background-color: #201E1E;
     z-index: 2;
     border-radius: 15px;
     opacity: 0;

@@ -19,7 +19,7 @@ font-family: 'Roboto', sans-serif; */
     --ab-font-weight: 400;
     --ab-line-height: 1.5rem;
     --ab-title-color: var(--ab-dark-color);
-    --ab-link-color: #ff8888;
+    --ab-link-color: #91998c;
 }
 
 
@@ -31,6 +31,7 @@ body {
     color: var(--ab-light-color);
     background: var(--ab-background-color);
 }
+
 
 h6,
 .h6,
@@ -52,13 +53,13 @@ h1,
 }
 
 a {
-    color: var(--ab-link-color);
+    color: #91998c;
     text-decoration: none;
 }
 
 a:hover {
     color: #fff18d;
-    color: var(--ab-link-color);
+   
 }
 
 section {
@@ -87,6 +88,15 @@ section {
 /* Begin: Landing Section-Home */
 
 #home {
+    background-color: var(--ab-dark-color);
+    background-image: url(/img/clouds.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#contact {
     background-color: var(--ab-dark-color);
     background-image: url(/img/clouds.jpg);
     background-size: cover;
@@ -126,8 +136,7 @@ section {
 }
 
 #contact-card {
-    background-color: var(--ab-dark-color);
-    background-image: url(/img/clouds.jpg);
+    background-color: transparent;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -153,7 +162,7 @@ section {
 
 .section-page:nth-child(odd),
 .section-page:nth-child(odd)>.container::after {
-    background-color: #2c2c2c;
+    background-color: #696969;
 }
 
 /*section dividers to play with */
