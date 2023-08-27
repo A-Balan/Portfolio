@@ -18,6 +18,11 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@100;200;300;400;500;800&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
     <!-- devicons.dev -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -57,7 +62,7 @@
                 </a>
             </div>
 
-          
+
             <div class="nav-item">
                 <a href="#skills" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
                     data-bs-title="Skills" data-bs-custom-class="nav-tooltip">
@@ -106,24 +111,45 @@
         <section id="home">
             <div id="homeCover">
                 <div class="row-col-1 mainHeader">
-                    <div class="col mainTitle">
-                        <img src="/img/Anyas/title.png" class="img-fluid w-100">
+                    <div class="col mainTitle text-center">
+                        <img src="/img/Anyas/title.png" class="img-fluid">
+                        <!-- <h3 class="text-start text-dark">I'm a full-stack Software Developer in Alpharetta, GA. Take a
+                            look at my portfolio & Contact me with projects you wish to bring to life. </h3> -->
                     </div>
-                    <div class="col mt-5" style="text-align: center;">
-                        <a href="#contact" class="btn btn-dark btn-lg btn-yellow">CONTACT</a> &nbsp;
-                        <a href="/img/Anyas/Resume.png" target="_blank"
-                            class="btn btn-dark btn-lg btn-yellow">RESUME</a>
+                    <div class="maxWidthContainer text-center">
+                        <h4 class="text-dark mb-0 mt-3">I'm a full-stack Software Developer in Alpharetta, GA. Take a
+                            look at my portfolio & Contact me with projects you wish to bring to life.</h4>
+                    </div>
+                    <div class="col" style="text-align: center;">
+                        <!-- <p class="text-dark text-center">I'm a full-stack Software Developer in Alpharetta, GA. Take a
+                            look at my portfolio & Contact me with projects you wish to bring to life.</p> -->
+                        <div class="row">
+                            <div class="col hoverIcon">
+                                <a href="#contact" class="hoverIcon">
+                                    <img src="/img/Anyas/envelopepixel2.png" />
+                                    <br>
+                                    <h4 class="text-dark">Contact</h4>
+                                </a> &nbsp;
+                            </div>
+                            <div class="col hoverIcon">
+                                <a href="/img/Anyas/Resume.png" target="_blank"><img src="/img/Anyas/folderpixel.png" />
+                                    <br>
+                                    <h4 class="text-dark" style="letter-spacing: 0.2rem;">&nbsp;Resume</h4>
+                                </a>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </section>
-      
+
 
         <!-- skills section -->
         <section id="skills" class="section-page">
             <div class="container">
-                <h1 class="text-center mb-5"> <img src="/img/Anyas/properfect.png" height="55"/> What I Use</h1>
+                <h1 class="text-center mb-5"> <img src="/img/Anyas/properfect.png" height="55" /> What I Use</h1>
                 <div class="row gy-5">
                     <div class="col-12 col-lg-6">
                         <div class="icon-card">
@@ -141,8 +167,8 @@
                             <div class="icon-card-body">
                                 <!-- content of card -->
                                 <p>
-                                    I utilize C#, as well as industry-standard design patterns, like MVC, to develop
-                                    full-stack web applications. View my main <a href="#projects">projects</a> section
+                                    I use C#, as well as industry-standard design patterns, like MVC to create dynamic
+                                    applications. View my main <a href="#projects">projects</a> section
                                     to see examples.
                                 </p>
                             </div>
@@ -256,7 +282,7 @@
         <!-- projects section-->
         <section id="projects" class="section-page">
             <div class="container">
-                <h2>Projects<img src="/img/Anyas/catgenie.png" height="65"/></h2>
+                <h2>C# MVC Projects <img src="/img/Anyas/catgenie.png" height="65" /></h2>
                 <p class="my-3">Showcasing complete functional projects demonstrates what I can contribute to your team.
                     I
                     built these projects to demonstrate skill with front end, back end, security, and
@@ -325,10 +351,9 @@
                 </div>
 
 
-                <h2 class="mt-5" id="jsProjects">Smaller Projects</h2>
+                <h2 class="mt-5" id="jsProjects">JS Projects</h2>
                 <p class="my-3">
-                    Alongside my larger projects, I have also built several smaller projects to show proficiency with
-                    making dynamic web applications that can take user inputs and deliver results.
+                    Below are a some smaller projects built with Javascript, Bootstrap, CSS and Html.
                 </p>
 
                 <!-- row of 6 smaller projects -->
@@ -455,9 +480,9 @@
         <section id="blog" class="section-page">
             <div class="container">
                 <h2 class="mb-5 text-center">
-                    Blog Stuff
+                    The Blog <img src="/img/Anyas/catblogger.png" height="65" />
                 </h2>
-                <p>I update this blog weekly. Featuring coding challenges and tech updates.</p>
+                <p>A weekly updated blog featuring code breakdowns and industry updates.</p>
                 <article class="card mb-4 blog-article">
                     <div class="row blog-row g-0">
                         <!-- blog image -->
@@ -589,53 +614,53 @@
         </section>
         <!-- contact section -->
         <section id="contact" class="section-page ">
-            <h2>Contact Me</h2>
             <div class="row row-cols-1 row-cols-sm-2">
 
-          <div class="col">  <img src="/img/profilephoto.png" class="p-3 mb-5 responsivePicture" /> </div>
+                <div class="col"> <img src="/img/profilephoto.png" class="p-3 mb-5 responsivePicture" /> </div>
 
-            <div class="col>
-                <div class="card card-body text-dark" id="contact-card">
-                <form name="PortfolioContact" method="post" netlify>
-                    <div class="row row-cols-1 mt-2">
-                        <div class="col col-md-6 mb-2 mb-md-0">
-                            <label for="FirstName" class="form-label">First Name</label>
-                            <input aria-label="First Name" class="form-control" name="FirstName" id="FirstName"
-                                type="text" placeholder="First Name" required />
-                        </div>
-                        <div class="col col-md-6">
-                            <label for="LastName" class="form-label">Last Name</label>
-                            <input aria-label="Last Name" class="form-control" name="LastName" id="LastName" type="text"
-                                placeholder="Last Name" required />
-                        </div>
-                        <div class="col col-md-6 mt-2">
-                            <label for="Email" class="form-label">Email</label>
-                            <input aria-label="Email" class="form-control" name="Email" id="Email" type="email"
-                                placeholder="Email" required" />
-                        </div>
-                        <div class="col col-md-6 mt-2">
-                            <label for="Phone" class="form-label">Phone</label>
-                            <input aria-label="Phone" class="form-control" name="Phone" id="Phone" type="tel"
-                                placeholder="Phone" />
-                        </div>
-                        <div class="col text-start mt-2">
-                            <label for="Subject" class="form-label">Subject</label>
-                            <input aria-label="Subject" class="form-control" name="Subject" id="Subject" type="text"
-                                placeholder="Subject" required />
-                        </div>
-                        <div class="col text-start mt-2">
-                            <label for="Message" class="form-label">Message</label>
-                            <textarea aria-label="Message" class="form-control" name="Message" id="Message" type="tel"
-                                placeholder="Message" rows="4"></textarea>
-                        </div>
-                        <div class="text-end">
-                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
-                        </div>
+                <div class="col">
+                    <h2 class="ms-3">Contact Me <img src="/img/Anyas/pigeontoast.png" height="65" /></h2>
+                    <div class=" card card-body text-dark" id="contact-card">
+                        <form name="PortfolioContact" method="post" netlify>
+                            <div class="row row-cols-1 mt-2">
+                                <div class="col col-md-6 mb-2 mb-md-0">
+                                    <label for="FirstName" class="form-label">First Name</label>
+                                    <input aria-label="First Name" class="form-control" name="FirstName" id="FirstName"
+                                        type="text" placeholder="First Name" required />
+                                </div>
+                                <div class="col col-md-6">
+                                    <label for="LastName" class="form-label">Last Name</label>
+                                    <input aria-label="Last Name" class="form-control" name="LastName" id="LastName"
+                                        type="text" placeholder="Last Name" required />
+                                </div>
+                                <div class="col col-md-6 mt-2">
+                                    <label for="Email" class="form-label">Email</label>
+                                    <input aria-label="Email" class="form-control" name="Email" id="Email" type="email"
+                                        placeholder="Email" required" />
+                                </div>
+                                <div class="col col-md-6 mt-2">
+                                    <label for="Phone" class="form-label">Phone</label>
+                                    <input aria-label="Phone" class="form-control" name="Phone" id="Phone" type="tel"
+                                        placeholder="Phone" />
+                                </div>
+                                <div class="col text-start mt-2">
+                                    <label for="Subject" class="form-label">Subject</label>
+                                    <input aria-label="Subject" class="form-control" name="Subject" id="Subject"
+                                        type="text" placeholder="Subject" required />
+                                </div>
+                                <div class="col text-start mt-2">
+                                    <label for="Message" class="form-label">Message</label>
+                                    <textarea aria-label="Message" class="form-control" name="Message" id="Message"
+                                        type="tel" placeholder="Message" rows="4"></textarea>
+                                </div>
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
-            </div>
-        </div>
 
             </div>
         </section>
@@ -649,18 +674,18 @@
 
                 <div class="col col-6 text-start pt-1">
                     <div><a href=""><img src="/img/Anyas/cutecomputer.png" height="40"> Try the Bug Tracker</a></div>
-                  
+
                 </div>
-               
+
                 <div class="col col-6 text-end">
-                  
-                    <a class="text-decoration-none" href="www.linkedin.com/in/anna-balan-37674a25a">
+
+                    <a class="text-decoration-none" href="https://linkedin.com/in/anna-balan-37674a25a">
                         <i class="bi bi-linkedin p-2 socialIcons"></i>
                     </a>
                     <a class="text-decoration-none" href="https://github.com/A-Balan/Portfolio">
                         <i class="bi bi-github p-2 socialIcons"></i>
                     </a>
-                    <a class="text-decoration-none" href="mailto:abalan0326@gmail.com">
+                    <a class="text-decoration-none" onclick="showClipboardMessage()">
                         <i class="bi bi-envelope p-2 socialIcons"></i>
                     </a>
                 </div>
@@ -993,6 +1018,42 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="sweetalert2.all.min.js"></script>
+
+    <script>
+        function copyToClipboard() {
+            // Copy the text inside the text field
+            navigator.clipboard.writeText("abalan0326@gmail.com");
+        }
+
+        function showClipboardMessage() {
+            // Swal.fire({
+            //     text: "abalan0326@gmail.com",
+            //     confirmButtonText: "Copy"
+            // }).then(function (result) {
+            //     copyToClipboard();
+            // });
+
+            Swal.fire({
+                html: '<br />abalan0326@gmail.com ',
+                showCloseButton: true,
+                focusConfirm: false,
+                confirmButtonText: '<i class="bi bi-clipboard"></i> Copy',
+            }).then(function (result) {
+                copyToClipboard();
+
+                if (result.value === true) {
+                    Swal.fire({
+                        html: "<br />Copied to Clipboard!"
+                    })
+                }
+            })
+        }
+    </script>
+
 </body>
 
 </html>

@@ -4,10 +4,10 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
     /* fonts */
-    --ab-title-font: 'Bebas Neue', sans-serif;
-    --ab-subtitle-font: 'Fira Sans', sans-serif;
-    --ab-heading-font: 'Bebas Neue', sans-serif;
-    --ab-body-font: 'Roboto', sans-serif;
+    --ab-title-font: 'Courier Prime', monospace;
+    --ab-subtitle-font: 'Courier Prime', monospace;
+    --ab-heading-font: 'Courier Prime', monospace;
+    --ab-body-font: 'Courier Prime', monospace;
 
     /* basic colors */
     --ab-dark-color: #212121;
@@ -15,7 +15,7 @@ font-family: 'Roboto', sans-serif; */
     --ab-background-color: rgba(350, 250, 250, 0.8);
 
     /* text styles */
-    --ab-font-size: 1.2rem;
+    --ab-font-size: 1.0rem;
     --ab-font-weight: 400;
     --ab-line-height: 1.5rem;
     --ab-title-color: var(--ab-dark-color);
@@ -45,7 +45,7 @@ h2,
 .h2,
 h1,
 .h1 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: var(--ab-heading-font);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -59,7 +59,7 @@ a {
 
 a:hover {
     color: #fff18d;
-   
+
 }
 
 section {
@@ -135,12 +135,17 @@ section {
     padding-left: .1em;
 }
 
+.hoverIcon:hover {
+    transform: scale(1.03) translateY(-2%);
+}
+
 #contact-card {
     background-color: transparent;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    border-color: transparent;
 }
 
 /* End Landing Section-Home */
@@ -212,6 +217,10 @@ footer.fixed-bottom {
     max-width: 60vw;
 }
 
+.maxWidthContainer {
+    max-width: 75vw;
+}
+
 
 /* End: footer styles */
 
@@ -243,7 +252,7 @@ footer.fixed-bottom {
     }
 
     .responsivePicture {
-        max-width: 40vw;
+        max-width: 30vw;
     }
 }
 
