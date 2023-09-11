@@ -4,10 +4,10 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
     /* fonts */
-    --ab-title-font: 'Courier Prime', monospace;
-    --ab-subtitle-font: 'Courier Prime', monospace;
-    --ab-heading-font: 'Courier Prime', monospace;
-    --ab-body-font: 'Courier Prime', monospace;
+    --ab-title-font: 'Cinzel Decorative', cursive;
+    --ab-subtitle-font: 'Kanit', sans-serif;
+    --ab-heading-font: 'Cinzel Decorative', cursive;
+    --ab-body-font: 'Kanit', sans-serif;
 
     /* basic colors */
     --ab-dark-color: #212121;
@@ -16,10 +16,25 @@ font-family: 'Roboto', sans-serif; */
 
     /* text styles */
     --ab-font-size: 1.0rem;
-    --ab-font-weight: 400;
+    --ab-font-weight: 300;
     --ab-line-height: 1.5rem;
     --ab-title-color: var(--ab-dark-color);
     --ab-link-color: #91998c;
+
+    /* #region cyan */
+    --ab-cyan-core: #0dcaf0;
+    --ab-cyan-100: hsl(191, 60%, 90%);
+    --ab-cyan-150: hsl(191, 60%, 85%);
+    --ab-cyan-200: hsl(191, 60%, 80%);
+    --ab-cyan-300: hsl(191, 60%, 70%);
+    --ab-cyan-400: hsl(191, 60%, 60%);
+    --ab-cyan-500: hsl(191, 60%, 50%);
+    --ab-cyan-600: hsl(191, 60%, 40%);
+    --ab-cyan-700: hsl(191, 60%, 30%);
+    --ab-cyan-800: hsl(191, 60%, 20%);
+    --ab-cyan-850: hsl(191, 60%, 15%);
+    --ab-cyan-900: hsl(191, 60%, 10%);
+    /* #endregion cyan */
 }
 
 
@@ -47,9 +62,8 @@ h1,
 .h1 {
     font-family: var(--ab-heading-font);
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: .1rem;
-
 }
 
 a {
@@ -58,7 +72,7 @@ a {
 }
 
 a:hover {
-    color: #fff18d;
+    color: #F78521;
 
 }
 
@@ -73,31 +87,27 @@ section {
 .btn-primary {
     --bs-btn-bg: var(--ab-dark-color);
     --bs-btn-border-color: var(--ab-dark-color);
-    --bs-btn-hover-bg: #fff18d;
+    --bs-btn-hover-bg: #F78521;
     --bs-btn-hover-color: var(--ab-dark-color);
 }
 
-.btn-#fff18d:hover {
-    background-color: #fff18d;
+.btn-#F78521:hover {
+    background-color: #F78521;
     color: var(--ab-dark-color);
-    border-color: #fff18d;
+    border-color: #F78521;
+}
+
+
+.bwTextBtn-#F78521:hover {
+    color: var(--ab-dark-color) !important;
 }
 
 /* End: Element Overrides */
 
 /* Begin: Landing Section-Home */
 
-#home {
-    background-color: var(--ab-dark-color);
-    background-image: url(/img/clouds.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
 #contact {
-    background-color: var(--ab-dark-color);
+    background-color: #424242;
     background-image: url(/img/clouds.jpg);
     background-size: cover;
     background-position: center;
@@ -115,11 +125,12 @@ section {
     align-items: center;
 }
 
-
 .mainTitle {
     font-family: var(--ab-title-font);
+    font-weight: 900;
     font-size: 8rem;
     line-height: 1rem;
+    color: rgba(0, 0, 0, 1);
 }
 
 .subTitle {
@@ -133,10 +144,6 @@ section {
 .mainLogo {
     height: .5em;
     padding-left: .1em;
-}
-
-.hoverIcon:hover {
-    transform: scale(1.03) translateY(-2%);
 }
 
 #contact-card {
@@ -162,12 +169,12 @@ section {
 
 .section-page:nth-child(even),
 .section-page:nth-child(even)>.container::after {
-    background-color: #424242;
+    background-color: var(--ab-cyan-300);
 }
 
 .section-page:nth-child(odd),
 .section-page:nth-child(odd)>.container::after {
-    background-color: #696969;
+    background-color: var(--ab-cyan-800);
 }
 
 /*section dividers to play with */
@@ -202,11 +209,11 @@ section {
 }
 
 .socialIcons:hover {
-    color: #fff18d;
+    color: #F78521;
 }
 
 footer.fixed-bottom {
-    background-color: #333232;
+    background-color: #201F1F;
 }
 
 .bugTrackLink {
@@ -223,6 +230,44 @@ footer.fixed-bottom {
 
 
 /* End: footer styles */
+
+/* Start: #home mobile styles */
+
+#home {
+    background-color: black;
+    background-image: url(/img/Anyas/cooljar.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#home-info {
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hoverIcon:hover {
+    transform: scale(1.03) translateY(-2%);
+}
+
+.smallFileImg {
+    max-width: 30vw;
+}
+
+/* make the text below file icons display on hover */
+
+/* .displayNoneContact {
+    display: none;
+}
+
+.hoverIcon:hover .displayNoneContact {
+    display: block;
+} */
+
+/* End: #home mobile styles */
 
 /* Start: media queries */
 
