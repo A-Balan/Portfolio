@@ -11,14 +11,10 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
 
 
     <!-- devicons.dev -->
@@ -42,7 +38,7 @@
     <link rel="stylesheet" href="/css/hovercard.css">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -107,34 +103,33 @@
     <main data-bs-spy="scroll" data-bs-target="#menuPill">
         <!-- landing screen -->
         <section id="home">
-            <div id="home-info" class="row text-center m-5">
+            <div  id="home-info" class="row text-center m-5">
                 <div class="col-12 text-end">
-                    <h1 class="ms-5" style="font-size: 6rem; "><strong>Anya Balan</strong></h1>
+                  <h1 class="ms-5">Anya Balan</h1> 
+                  <h2> Software Developer</h2>
+                    
                 </div>
                 <div class="col-6">
-                    <div class="row">
+                    <div class="row customFlexColumn g-5">
                         <div class="col-6">
                             <div class="hoverIcon" style="margin-right: -6vw;">
                                 <a href="#contact">
-                                    <img src="/img/Anyas/envelopepixel2.png" class="smallFileImg" />
+                                    <img src="/img/Anyas/envelopepixel2.png" class="dynamicFileImg" />
                                 </a>
                             </div>
                             <h3 class="text-light text-end me-3">Contact</h3>
                         </div>
-                        <div class="col-6">
-                            <div class="hoverIcon" style="margin-top: -5vh; margin-left: -6vw;">
+                        <div class="col-6 resumeIcon">
+                            <div class="hoverIcon">
                                 <a href="/img/Anyas/Resume.png" target="_blank"><img src="/img/Anyas/folderpixel.png"
-                                        class="smallFileImg" />
+                                        class="dynamicFileImg" />
                                 </a>
                             </div>
-                            <h3 class="text-light displayNoneContact hoverIcon">Resume</h3>
+                            <h3 class="text-light displayNoneContact">Resume</h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 text-center">
-                    <h5 class="text-light">I'm a full-stack Software Developer in Alpharetta, GA. Take a
-                        look at my portfolio & Contact me with projects you wish to bring to life.</h5>
-                </div>
+          
 
                 <div class="col-6 d-flex">
                     <div class="row">
@@ -286,17 +281,14 @@
         <section id="projects" class="section-page">
             <div class="container">
                 <h2>C# MVC Projects <img src="/img/Anyas/catgenie.png" height="65" /></h2>
-                <p class="my-3">Showcasing complete functional projects demonstrates what I can contribute to your team.
-                    I
-                    built these projects to demonstrate skill with front end, back end, security, and
-                    database development. All of these projects are full-stack web applications that are published so
-                    that
+                <p class="my-3">Showcasing complete functional projects built with MVC Entity Framework, managed on PostrgreSQL; applied front end, back end, security, and
+                    database development. All of these projects are full-stack web applications that are published on Railway, so
                     you
                     can demo them easily! <a href="#contact">Contact</a> me for a complete code walk-through.</p>
 
                 <!-- row of 3 main projects -->
 
-                <div class="row gy-5 mt-5 row-cols-1 row-cols-lg-3">
+                <div class="row gy-5 mt-1 row-cols-1 row-cols-lg-3">
                     <!-- bug tracker card -->
                     <div class="col">
                         <div class="hc-wrapper">
@@ -356,12 +348,12 @@
 
                 <h2 class="mt-5" id="jsProjects">JS Projects</h2>
                 <p class="my-3">
-                    Below are a some smaller projects built with Javascript, Bootstrap, CSS and Html.
+                    Below are a some smaller projects built with Javascript, Bootstrap, CSS and Html, as well as an API integration; published on Netlify. 
                 </p>
 
                 <!-- row of 6 smaller projects -->
 
-                <div class="row gy-5 mt-5 row-cols-1 row-cols-lg-3">
+                <div class="row gy-5 mt-1 row-cols-1 row-cols-lg-3">
 
                     <div class="col-sm-6 col-lg-4">
                         <div class="hc-wrapper">
@@ -485,7 +477,6 @@
                 <h2 class="mb-5 text-center">
                     The Blog <img src="/img/Anyas/catblogger.png" height="65" />
                 </h2>
-                <p>A weekly updated blog featuring code breakdowns and industry updates.</p>
                 <article class="card mb-4 blog-article">
                     <div class="row blog-row g-0">
                         <!-- blog image -->
@@ -619,7 +610,9 @@
         <section id="contact" class="section-page ">
             <div class="row row-cols-1 row-cols-sm-2">
 
-                <div class="col"> <img class="w-75" src="/img/Anyas/faceinframe.png" /></div>
+                <div class="col"> <img class="w-75" src="/img/Anyas/faceinframe.png" />
+                <div class="text-dark">Blah blah blahh Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ducimus vel numquam excepturi in eveniet minus soluta odio, repellat asperiores ad, culpa aliquid eligendi sed earum. Ipsum excepturi praesentium velit.</div>
+            </div>
 
                 <div class="col">
                     <h2 class="ms-3">Contact Me <img src="/img/Anyas/pigeontoast.png" height="65" /></h2>

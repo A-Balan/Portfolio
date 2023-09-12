@@ -4,10 +4,10 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
     /* fonts */
-    --ab-title-font: 'Cinzel Decorative', cursive;
-    --ab-subtitle-font: 'Kanit', sans-serif;
-    --ab-heading-font: 'Cinzel Decorative', cursive;
-    --ab-body-font: 'Kanit', sans-serif;
+    --ab-title-font: 'Eczar', serif;
+    --ab-subtitle-font: sans-serif;
+    --ab-heading-font: 'Eczar', serif;
+    --ab-body-font: sans-serif;
 
     /* basic colors */
     --ab-dark-color: #212121;
@@ -116,7 +116,7 @@ section {
 }
 
 #homeCover {
-    backdrop-filter: brightness(1.0) blur(0px);
+    backdrop-filter: brightness(0.8) blur(.5px);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -136,8 +136,6 @@ section {
 .subTitle {
     font-family: var(--ab-subtitle-font);
     font-size: 1.28rem;
-    letter-spacing: .1rem;
-    line-height: 1.1rem;
     font-weight: 300;
 }
 
@@ -253,8 +251,17 @@ footer.fixed-bottom {
     transform: scale(1.03) translateY(-2%);
 }
 
-.smallFileImg {
-    max-width: 30vw;
+.dynamicFileImg {
+    max-width: 10vw;
+}
+
+.customFlexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.resumeIconScreenAdjustment {
+    margin-left: 4vw;
 }
 
 /* make the text below file icons display on hover */
@@ -288,6 +295,15 @@ footer.fixed-bottom {
     .bugTrackLink {
         display: none;
     }
+
+    .customFlexColumn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dynamicFileImg {
+        max-width: 12vw;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -299,15 +315,53 @@ footer.fixed-bottom {
     .responsivePicture {
         max-width: 30vw;
     }
+
+    .dynamicFileImg {
+        max-width: 15vw;
+    }
+
+    .customFlexColumn {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .resumeIcon {
+        margin-top: 9.5vh;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    .dynamicFileImg {
+        max-width: 30vw;
+    }
+
+    .resumeIcon {
+        margin-top: 0vh;
+    }
+
+}
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    .dynamicFileImg {
+        max-width: 30vw;
+    }
+
+    .resumeIconScreenAdjustment {
+        margin-top: -5vh;
+        margin-left: -6vw;
+    }
+}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+
+    .dynamicFileImg {
+        max-width: 30vw;
+    }
+}
 
 /* End: media queries */
