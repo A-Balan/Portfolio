@@ -7,3 +7,9 @@ function fetchBlogData() {
             displayBlogData(data, baseUrl);
         });
 }
+
+function displayBlogData(blogPosts, baseUrl) {
+    
+    let template = document.getElementById('blog-template');
+    let blogSection = document.getElementById('blogs');
+}
