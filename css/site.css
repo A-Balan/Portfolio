@@ -64,7 +64,7 @@ h1,
     font-weight: 700;
     /* text-transform: uppercase; */
     letter-spacing: .1rem;
-   
+
 }
 
 a {
@@ -235,7 +235,7 @@ footer.fixed-bottom {
 #home {
     background-color: black;
     background-image: url(/img/Anyas/cooljar.jpg);
-    background-size: 100%;
+    background-size: 150%;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -248,12 +248,31 @@ footer.fixed-bottom {
     align-items: center;
 }
 
+.dynamicFileImg {
+    max-width: 25vw;
+}
+
 .hoverIcon:hover {
     transform: scale(1.03) translateY(-2%);
 }
 
-.dynamicFileImg {
-    max-width: 10vw;
+.hoverText {
+    position: absolute;
+    visibility: hidden;
+    color: #FFddaa;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 14px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+    font-weight: 900;
+}
+
+.hoverIcon:hover .hoverText {
+    visibility: visible;
 }
 
 .customFlexColumn {
@@ -264,6 +283,19 @@ footer.fixed-bottom {
 .resumeIconScreenAdjustment {
     margin-left: 4vw;
     margin-top: 5vh;
+}
+
+.h1TitleText {
+    font-size: 7rem !important;
+}
+
+.h2SubtitleText {
+    font-size: 3rem !important;
+    color: #FFddaa;
+}
+
+.betterLineHeight {
+    line-height: 7rem;
 }
 
 /* make the text below file icons display on hover */
@@ -285,6 +317,33 @@ footer.fixed-bottom {
     .mainTitle {
         font-size: 2rem;
         line-height: 5.5rem;
+    }
+
+    .hoverIcon:hover {
+        transform: scale(1.03) translateY(-2%);
+    }
+    
+    .hoverText {
+        position: absolute;
+        visibility: hidden;
+        color: #FFddaa;
+        border-radius: 3px;
+        padding: 5px;
+        font-size: 14px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 1;
+        font-weight: 900;
+    }
+
+    .dynamicFileImg {
+        max-width: 15vw;
+    }
+
+    #home {
+        background-size: 100%;
     }
 
     .subTitle {
@@ -327,7 +386,7 @@ footer.fixed-bottom {
         flex-direction: row;
     }
 
-   
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -337,7 +396,7 @@ footer.fixed-bottom {
         max-width: 11vw;
     }
 
-    
+
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
