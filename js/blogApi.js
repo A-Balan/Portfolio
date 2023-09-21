@@ -24,10 +24,18 @@ function displayBlogData(blogPosts, baseUrl) {
 
 
         let imgTag = document.createElement('img');
-        imgTag.setAttribute(
-            "src",
-            `data:${blogPost.imageType};base64,${blogPost.imageData}`
-        );
+        // with this:
+if (blogPost.imageData && blogPost.imageType) {  
+    imgTag.setAttribute(
+      "src",
+      `data:${blogPost.imageType};base64,${blogPost.imageData}`
+    );
+  } else {
+    imgTag.setAttribute(
+      'src',
+      'https://intheweedsblog-production.up.railway.app/img/sample.png'
+    );
+  }
         imgTag.classList.add('blog-image');
         imageDiv.appendChild(imgTag);
         // <img src="data:image/gif;base64,xxxxxxxxxxxxx..." class="blog-image" alt="...">
@@ -63,14 +71,14 @@ function displayBlogData(blogPosts, baseUrl) {
 
         let dateToday = new Date();
         let createdDate = new Date(
-            blogPost.Updated != null ? blogPost.Updated : blogPost.Created
+            blogPost.updated != null ? blogPost.updated : blogPost.Created
         );
         let diffTime = Math.abs(dateToday.getTime() - createdDate.getTime());
-        let lastUpdated = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-        if (lastUpdated == 1) {
-            blogPubDate.innerHTML = `Published ${lastUpdated} day ago`;
+        let lastupdated = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        if (lastupdated == 1) {
+            blogPubDate.innerHTML = `Published ${lastupdated} day ago`;
         } else {
-            blogPubDate.innerHTML = `Published ${lastUpdated} days ago`;
+            blogPubDate.innerHTML = `Published ${lastupdated} days ago`;
         }
 
         blogSection.appendChild(blogPostCard);
