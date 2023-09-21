@@ -116,15 +116,6 @@ section {
     position: relative;
 }
 
-#homeCover {
-    backdrop-filter: brightness(0.8) blur(.5px);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .mainTitle {
     font-family: var(--ab-title-font);
@@ -234,7 +225,7 @@ footer.fixed-bottom {
 
 #home {
     background-color: black;
-    background-image: url(/img/Anyas/cooljar.jpg);
+    background-image: url(/img/Anyas/cooljardark.jpg);
     background-size: 150%;
     background-position: center;
     background-repeat: no-repeat;
@@ -291,7 +282,7 @@ footer.fixed-bottom {
 
 .h2SubtitleText {
     font-size: 3rem !important;
-    color: #FFddaa;
+    color: rgba(350, 250, 250, 0.8)
 }
 
 .betterLineHeight {
