@@ -9,11 +9,6 @@ font-family: 'Roboto', sans-serif; */
     --ab-heading-font: 'Eczar', serif;
     --ab-body-font: sans-serif;
 
-    /* basic colors */
-    --ab-dark-color: #212121;
-    --ab-light-color: #eeeeee;
-    --ab-background-color: rgba(350, 250, 250, 0.8);
-
     /* text styles */
     --ab-font-size: 1.0rem;
     --ab-font-weight: 300;
@@ -21,32 +16,49 @@ font-family: 'Roboto', sans-serif; */
     --ab-title-color: var(--ab-dark-color);
     --ab-link-color: #91998c;
 
-    /* #region cyan */
-    --ab-cyan-core: #0dcaf0;
-    --ab-cyan-100: hsl(191, 60%, 90%);
-    --ab-cyan-150: hsl(191, 60%, 85%);
-    --ab-cyan-200: hsl(191, 60%, 80%);
-    --ab-cyan-300: hsl(191, 60%, 70%);
-    --ab-cyan-400: hsl(191, 60%, 60%);
-    --ab-cyan-500: hsl(191, 60%, 50%);
-    --ab-cyan-600: hsl(191, 60%, 40%);
-    --ab-cyan-700: hsl(191, 60%, 30%);
-    --ab-cyan-800: hsl(191, 60%, 20%);
-    --ab-cyan-850: hsl(191, 60%, 15%);
-    --ab-cyan-900: hsl(191, 60%, 10%);
-    /* #endregion cyan */
-}
-
-
-/* Start: Element Overrides */
 body {
     font-family: var(--ab-body-font);
     font-size: var(--ab-font-size);
     font-weight: var(--ab-font-weight);
     color: var(--ab-light-color);
-    background: var(--ab-background-color);
-}
+    background: rgb(242,243,244);
+    background: linear-gradient(180deg, rgba(242,243,244,1) 0%, rgba(150,150,150,1) 100%); }
 
+
+    .hoverIcon {
+        display: inline-block; /* Aligns icons side by side */
+        margin-right: -6vw;
+    }
+    
+    .dynamicFileImg {
+        max-width: 100%; /* Ensures image scales with its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+        .hoverIcon {
+            margin-right: 0;
+            margin-bottom: 20px; /* Adds space below icons on small screens */
+        }
+    }
+    
+
+
+/*Weird CSS*/
+
+      
+      .h1TitleText {
+        background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+        background-size: cover;
+        color: transparent;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        text-transform: uppercase;
+        font-size: 120px;
+        margin: 10px 0;
+        text-indent: 4%;
+      }
 
 h6,
 .h6,
@@ -92,10 +104,14 @@ section {
     --bs-btn-hover-color: var(--ab-dark-color);
 }
 
-.btn-#F78521:hover {
+.btn-primary:hover {
     background-color: #F78521;
-    color: var(--ab-dark-color);
+    color: white;
     border-color: #F78521;
+}
+
+.titleShadow {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -103,9 +119,6 @@ section {
     color: var(--ab-dark-color) !important;
 }
 
-/* End: Element Overrides */
-
-/* Begin: Landing Section-Home */
 
 #contact {
     background-color: #424242;
@@ -131,10 +144,6 @@ section {
     font-weight: 300;
 }
 
-.mainLogo {
-    height: .5em;
-    padding-left: .1em;
-}
 
 #contact-card {
     background-color: transparent;
@@ -147,8 +156,7 @@ section {
 
 /* End Landing Section-Home */
 
-/* Start: Main Content */
-
+/*section dividers to play with 
 .section-page {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -167,8 +175,6 @@ section {
     background-color: var(--ab-cyan-800);
 }
 
-/*section dividers to play with */
-
 .section-page>.container::after {
     content: "";
     position: absolute;
@@ -177,7 +183,7 @@ section {
     right: 0;
     height: 3rem;
 
-    /* clip-path: ellipse(50% 100% at top center); */
+    /* clip-path: ellipse(50% 100% at top center); 
     z-index: 1;
 }
 
@@ -188,22 +194,20 @@ section {
 .section-page:nth-child(odd)>.container::after {
     clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
 }
+*/
 
 /* End: Main Content */
 
 /* Start: footer styles */
 .socialIcons {
     font-size: 2rem;
-    transition: color 0.25s;
+    transition: #f72121 0.25s;
     color: var(--ab-grey-300);
 }
 
-.socialIcons:hover {
-    color: #F78521;
-}
 
 footer.fixed-bottom {
-    background-color: #201F1F;
+    background-color: #201f1fd1;
 }
 
 .bugTrackLink {
@@ -223,48 +227,43 @@ footer.fixed-bottom {
 
 /* Start: #home mobile styles */
 
-#home {
-    background-color: black;
-    background-image: url(/img/pexels-robert-șerban-11279737.jpg);
-    background-size: 150%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-#home-info {
-    /* background-color: rgba(0, 0, 0, 0.2); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .dynamicFileImg {
     max-width: 25vw;
+    transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+.hoverIcon {
+    position: relative; /* Position relative for absolute positioning of children */
+    overflow: hidden; /* Hide overflowing parts */
 }
 
 .hoverIcon:hover {
-    transform: scale(1.03) translateY(-2%);
+    transform: scale(1.03) translateY(-2%); /* Scale effect on hover */
 }
 
 .hoverText {
     position: absolute;
-    visibility: hidden;
+    visibility: hidden; /* Initially hidden */
     color: #FFddaa;
     border-radius: 3px;
     padding: 5px;
     font-size: 14px;
-    bottom: 0;
+    top: 100%; /* Start just below the image */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0); /* Center horizontally */
     text-align: center;
     z-index: 1;
     font-weight: 900;
+    transition: visibility 0s, transform 0.3s ease; /* Transition for visibility and transform */
 }
 
 .hoverIcon:hover .hoverText {
     visibility: visible;
+    transform: translate(-50%, -100%); /* Move above the image */
 }
+
+
 
 .customFlexColumn {
     display: flex;
@@ -278,11 +277,12 @@ footer.fixed-bottom {
 
 .h1TitleText {
     font-size: 5rem !important;
+   
 }
 
 .h2SubtitleText {
     font-size: 1.5rem !important;
-    color: rgba(350, 250, 250, 0.8)
+    color: black;
 }
 
 .betterLineHeight {
@@ -378,7 +378,7 @@ footer.fixed-bottom {
     }
 
     .dynamicFileImg {
-        max-width: 12vw;
+        max-width: 45vw;
     }
 
     .customFlexColumn {

@@ -70,7 +70,7 @@ So make sure images are higher res, same size and square. Make sure they're larg
 }
 
 .hc-card:hover::before {
-    opacity: 0.65;
+    opacity: 0.75;
 }
 
 @media(min-width: 1200px) {

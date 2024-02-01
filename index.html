@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <!-- Icons -->
+    <!-- BootstrapIcons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- google fonts -->
@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
 
 
-    <!-- devicons.dev -->
+    <!-- devicons.dev webste -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
@@ -27,13 +27,11 @@
 
     <link rel="stylesheet" href="/css/iconCards.css">
 
-    <link rel="stylesheet" href="/css/themecolors.css">
-
     <link rel="stylesheet" href="/css/blogCard.css">
 
     <link rel="stylesheet" href="/css/menuPill.css">
 
-    <!-- hovercard -->
+    <!-- hovercard css -->
 
     <link rel="stylesheet" href="/css/hovercard.css">
 
@@ -103,47 +101,30 @@
     <main data-bs-spy="scroll" data-bs-target="#menuPill">
         <!-- landing screen -->
         <section id="home">
-            <div id="home-info" class="row text-center m-5">
-                <div class="col-12 text-end ">
-                    <h1 class="ms-5 h1TitleText betterLineHeight">Anya Balan</h1>
-                    <h2 class="h2SubtitleText"> Software Developer</h2>
-
-                </div>
-
-                <div class="row">
-
-                    <div class="col-6">
-                        <div class="hoverIcon" style="margin-right: -6vw;">
-                            <a href="#contact">
-                                <img src="/img/Anyas/envelopepixel2.png"
-                                    class="dynamicFileImg mt-1 mt-sm-2 mt-md-3 mt-lg-3" />
-                                <div class="hoverText">Contact</div> <!-- Added this line -->
-                            </a>
-                        </div>
-
+            <div class="container">
+                <div class="row" id="home-info">
+                    <div class="col-md-8">
+                        <h1 class="h1TitleText betterLineHeight ms-5">Anya Balan</h1>
+                        <h2 class="h1 text-center">Software Developer</h2>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-4 text-center">
+                        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.41/build/spline-viewer.js"></script>
+<spline-viewer loading-anim-type="spinner-small-light" url="https://prod.spline.design/2HCelEJiArQAGSN4/scene.splinecode"></spline-viewer>
+                    </div>
+                </div>
+              
+                    
+                    <div class="col-sm-6 text-center">
                         <div class="hoverIcon">
-                            <a href="/img/ABalanResumeJAN24.pdf" target="_blank"><img src="/img/Anyas/folderpixel.png"
-                                    class="dynamicFileImg" />
-                                <div class="hoverText">Resume</div> <!-- Added this line -->
+                            <a href="/img/ABalanResumeJAN24.pdf" target="_blank">
+                                <img src="/img/Anyas/envelopepixel2.png" class="dynamicFileImg" />
+                                <div><strong>Resume</strong></div>
                             </a>
                         </div>
-
                     </div>
-
-                </div>
-
-
-                <div class="col-6 d-flex">
-                    <div class="row">
-                        <div class="col-12">
-                        </div>
-                    </div>
-                </div>
-
-
+               
             </div>
+            
 
         </section>
 
@@ -151,8 +132,8 @@
         <!-- skills section -->
         <section id="skills" class="section-page">
             <div class="container">
-                <h1 class="text-center mb-5"> <img src="/img/Anyas/properfect.png" height="55" /> What I Use</h1>
-                <div class="row gy-5">
+                <h1 class="text-center mb-5 titleShadow"> <img src="/img/Anyas/properfect.png" height="55" /> Tech Stack</h1>
+                <div class="row gy-5 text-light">
                     <div class="col-12 col-lg-6">
                         <div class="icon-card">
                             <div class="icon-card-header">
@@ -170,7 +151,7 @@
                                 <!-- content of card -->
                                 <p>
                                     I use C#, as well as industry-standard design patterns like MVC, to create dynamic
-                                    applications. View my main <a href="#projects">projects</a> section
+                                    applications. View my main <a href="#projects">Projects</a> section
                                     to see examples.
                                 </p>
                             </div>
@@ -222,7 +203,7 @@
                                 <p>
                                     I use JavaScript to bring websites to life, and make them fully interactive. Check
                                     out my
-                                    <a href="#jsProjects">JavaScript</a> section to learn more.
+                                    <a href="#projects">Projects</a> section to learn more.
                                 </p>
 
                             </div>
@@ -287,13 +268,7 @@
         <!-- projects section-->
         <section id="projects" class="section-page">
             <div class="container">
-                <h2>C# MVC Projects <img src="/img/Anyas/catgenie.png" height="65" /></h2>
-                <p class="my-3">Showcasing complete, functional projects built with MVC Entity Framework, managed on
-                    PostrgreSQL; applied front end, back end, security, and
-                    database development. All of these projects are full-stack web applications that are published on
-                    Railway, so
-                    you
-                    can demo them easily! <a href="#contact">Contact</a> me for a complete code walk-through.</p>
+                <h2 class="mt-5 text-center titleShadow">Projects<img src="/img/Anyas/catgenie.png" height="65" /></h2>
 
                 <!-- row of 3 main projects -->
 
@@ -301,19 +276,21 @@
                     <!-- bug tracker card -->
                     <div class="col">
                         <div class="hc-wrapper">
-                            <div class="hc-card">
-                                <picture>
-                                    <source media="(min-width: 992px)" srcset="/img/Anyas/bugtracker.png" />
-                                    <img src="/img/Anyas/bugtracker.png" />
-                                </picture>
-                                <div class="hc-content">
-                                    <p>
-                                        A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
-                                    </p>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#bugTrackerModal">Learn More</button>
+                            <a data-bs-toggle="modal" data-bs-target="#bugTrackerModal">
+                                <div class="hc-card">
+                                    <picture>
+                                        <source media="(min-width: 992px)" srcset="/img/Anyas/bugtracker.png" />
+                                        <img src="/img/Anyas/bugtracker.png" />
+                                    </picture>
+                                    <div class="hc-content">
+                                        <p>
+                                            A full-stack bug tracker built with ASP.NET, MVC, C#, and SQL.
+                                        </p>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#bugTrackerModal">Learn More</button>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <!-- contact pro card -->
@@ -354,13 +331,6 @@
                     </div>
                 </div>
 
-
-                <h2 class="mt-5" id="jsProjects">JS Projects</h2>
-                <p class="my-3">
-                    Below are a some smaller projects built with Javascript, Bootstrap, CSS and Html, as well as an API
-                    integration; published on Netlify.
-                </p>
-
                 <!-- row of 6 smaller projects -->
 
                 <div class="row gy-5 mt-1 row-cols-1 row-cols-lg-3">
@@ -377,7 +347,7 @@
                                         An API integration with TMDB, showing the top 20 movies at any given time.
                                     </p>
                                     <a type="button" href="https://movielist-abalan.netlify.app"
-                                        class="btn btn-primary">Learn More</a>
+                                        class="btn text-light btn-primary">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -395,7 +365,7 @@
                                         Calculate what a mortgage will really cost you.
                                     </p>
                                     <a type="button" href="https://abalan-mortgagecalc.netlify.app"
-                                        class="btn btn-primary">Learn More</a>
+                                        class="btn text-light btn-primary">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -413,7 +383,7 @@
                                         Track event attendance for your company.
                                     </p>
                                     <a type="button" href="https://abalan-eventhound.netlify.app"
-                                        class="btn btn-primary">Learn More</a>
+                                        class="btn btn-primary text-light">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -431,7 +401,7 @@
                                         Check input text to see if it's a palindrome.
                                     </p>
                                     <a type="button" href="https://palindrome-abalan.netlify.app"
-                                        class="btn btn-primary">Learn More</a>
+                                        class="btn btn-primary text-light">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -449,7 +419,7 @@
                                         Following the Fizzbuzz prompt, we find multiples of two input values.
                                     </p>
                                     <a type="button" href="https://fizzbuzz-abalan.netlify.app"
-                                        class="btn btn-primary">Learn More</a>
+                                        class="btn btn-primary text-light">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -467,7 +437,7 @@
                                         This app takes in a string and reverses it.
                                     </p>
                                     <a type="button" href="https://reverse-abalan.netlify.app"
-                                        class="btn btn-primary">Learn More</a>
+                                        class="btn btn-primary text-light">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -484,8 +454,8 @@
         <!-- blog -->
         <section id="blogs" class="section-page px-3">
             <div class="container">
-                <h2 class="mb-5 text-center">
-                    The Blog <img src="/img/Anyas/catblogger.png" height="65" />
+                <h2 class="mt-5 text-center titleShadow">
+                    Blog <img src="/img/Anyas/catblogger.png" height="65" />
                 </h2>
 
             </div>
@@ -493,24 +463,7 @@
         <!-- contact section -->
         <section id="contact" class="section-page">
             
-            <div class="row row-cols-1 row-cols-sm-2">
-
-                <div class="col d-flex flex-column align-items-center px-4"> <img class="w-75" src="/img/Anyas/faceinframe.png" />
-                    <div class="card" >
-                        <div class="card-body overflow-auto">
-                          <h5 class="card-title">About</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Ice Breakers</h6>
-                          <p class="card-text" style="max-height: 10rem; overflow-y: auto; ">Hi, I'm Anya. I'm located in Alpharetta, Georgia. My favorite food is Maryland crab soup, since I grew
-                            up around Baltimore. I like crafts, and I love outdoor breweries. My favorite animal is a
-                            turtle, after dogs of course. Have any good icebreakers? Let me know by filling out this
-                            form, or click on the envelope, bottom right.</p>
-                          
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col">
-                    <h2 class="ms-3 mt-5">Contact Me <img src="/img/Anyas/pigeontoast.png" height="65" /></h2>
+                    <h2 class="ms-3 mt-5 titleShadow">Contact Me <img src="/img/Anyas/pigeontoast.png" height="65" /></h2>
                     <div class=" card card-body text-dark" id="contact-card">
                         <form name="PortfolioContact" method="post" netlify>
                             <div class="row row-cols-1 mt-2">
@@ -545,15 +498,12 @@
                                         type="tel" placeholder="Message" rows="4"></textarea>
                                 </div>
                                 <div class="text-end">
-                                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                                    <button type="submit" class="btn btn-primary text-light mt-2">Submit</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-            </div>
-
-            </div>
         </section>
 
     </main>
@@ -564,7 +514,7 @@
             <div class="row row-cols-1 g-3 py-1">
 
                 <div class="col col-6 text-start pt-1">
-                    <div><a href="https://thebugtracker-production-7556.up.railway.app"><img src="/img/Anyas/cutecomputer.png" height="40"> Try the Bug Tracker</a></div>
+                    <div><a href="https://thebugtracker-production-7556.up.railway.app"><img src="/img/Anyas/cutecomputer.png" height="40"> <strong>Bug Tracker</strong></a></div>
 
                 </div>
 
@@ -869,7 +819,7 @@
 
     <!-- Blogpost Template -->
     <template id="blog-template">
-        <article class="card mb-4 blog-article">
+        <article class="card mb-4 mx-5 blog-article">
             <div class="row blog-row g-0">
                 <!-- blog image -->
                 <div class="col-lg-4 blog-header">
