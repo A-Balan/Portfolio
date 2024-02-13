@@ -15,50 +15,56 @@ font-family: 'Roboto', sans-serif; */
     --ab-line-height: 1.5rem;
     --ab-title-color: var(--ab-dark-color);
     --ab-link-color: #91998c;
+}
 
 body {
     font-family: var(--ab-body-font);
     font-size: var(--ab-font-size);
     font-weight: var(--ab-font-weight);
     color: var(--ab-light-color);
-    background: rgb(242,243,244);
-    background: linear-gradient(180deg, rgba(242,243,244,1) 0%, rgba(150,150,150,1) 100%); }
+    background: rgb(242, 243, 244);
+    background: linear-gradient(180deg, rgba(242, 243, 244, 1) 0%, rgba(150, 150, 150, 1) 100%);
+}
 
 
+.hoverIcon {
+    display: inline-block;
+    /* Aligns icons side by side */
+    margin-right: -6vw;
+}
+
+.dynamicFileImg {
+    max-width: 100%;
+    /* Ensures image scales with its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
     .hoverIcon {
-        display: inline-block; /* Aligns icons side by side */
-        margin-right: -6vw;
+        margin-right: 0;
+        margin-bottom: 20px;
+        /* Adds space below icons on small screens */
     }
-    
-    .dynamicFileImg {
-        max-width: 100%; /* Ensures image scales with its container */
-        height: auto; /* Maintain aspect ratio */
-    }
-    
-    /* Responsive adjustments for smaller screens */
-    @media (max-width: 768px) {
-        .hoverIcon {
-            margin-right: 0;
-            margin-bottom: 20px; /* Adds space below icons on small screens */
-        }
-    }
-    
+}
+
 
 
 /*Weird CSS*/
 
-      
-      .h1TitleText {
-        background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-        background-size: cover;
-        color: transparent;
-        -moz-background-clip: text;
-        -webkit-background-clip: text;
-        text-transform: uppercase;
-        font-size: 120px;
-        margin: 10px 0;
-        text-indent: 4%;
-      }
+
+.h1TitleText {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 120px;
+    margin: 10px 0;
+    text-indent: 4%;
+}
 
 h6,
 .h6,
@@ -230,37 +236,46 @@ footer.fixed-bottom {
 
 .dynamicFileImg {
     max-width: 25vw;
-    transition: transform 0.3s ease; /* Smooth transition for image */
+    transition: transform 0.3s ease;
+    /* Smooth transition for image */
 }
 
 .hoverIcon {
-    position: relative; /* Position relative for absolute positioning of children */
-    overflow: hidden; /* Hide overflowing parts */
+    position: relative;
+    /* Position relative for absolute positioning of children */
+    overflow: hidden;
+    /* Hide overflowing parts */
 }
 
 .hoverIcon:hover {
-    transform: scale(1.03) translateY(-2%); /* Scale effect on hover */
+    transform: scale(1.03) translateY(-2%);
+    /* Scale effect on hover */
 }
 
 .hoverText {
     position: absolute;
-    visibility: hidden; /* Initially hidden */
+    visibility: hidden;
+    /* Initially hidden */
     color: #FFddaa;
     border-radius: 3px;
     padding: 5px;
     font-size: 14px;
-    top: 100%; /* Start just below the image */
+    top: 100%;
+    /* Start just below the image */
     left: 50%;
-    transform: translate(-50%, 0); /* Center horizontally */
+    transform: translate(-50%, 0);
+    /* Center horizontally */
     text-align: center;
     z-index: 1;
     font-weight: 900;
-    transition: visibility 0s, transform 0.3s ease; /* Transition for visibility and transform */
+    transition: visibility 0s, transform 0.3s ease;
+    /* Transition for visibility and transform */
 }
 
 .hoverIcon:hover .hoverText {
     visibility: visible;
-    transform: translate(-50%, -100%); /* Move above the image */
+    transform: translate(-50%, -100%);
+    /* Move above the image */
 }
 
 
@@ -277,7 +292,7 @@ footer.fixed-bottom {
 
 .h1TitleText {
     font-size: 5rem !important;
-   
+
 }
 
 .h2SubtitleText {
@@ -317,12 +332,12 @@ footer.fixed-bottom {
     .h1TitleText {
         font-size: 7rem !important;
     }
-    
+
     .h2SubtitleText {
         font-size: 3rem !important;
         color: rgba(350, 250, 250, 0.8)
     }
-    
+
     .hoverText {
         position: absolute;
         visibility: hidden;
@@ -394,6 +409,10 @@ footer.fixed-bottom {
 
     .dynamicFileImg {
         max-width: 11vw;
+    }
+
+    main {
+        padding-bottom: 50px;
     }
 
 
