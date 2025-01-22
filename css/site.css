@@ -26,6 +26,59 @@ body {
     background: linear-gradient(180deg, rgba(242, 243, 244, 1) 0%, rgba(150, 150, 150, 1) 100%);
 }
 
+#home {
+    --s: 140px; /* control the size*/
+    --c1: #efff1610;
+    --c2: #09030395;
+    
+    --_g: #0000 52%,var(--c1) 54% 57%,#0000 59%; 
+    background: 
+     radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
+     radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
+     radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
+     radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
+     var(--c2);
+    background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+  }
+
+  .bubbly-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: black;
+    background: #ecd078;
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bubble {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: disperse 5s ease-out forwards;
+    opacity: 0.8;
+}
+
+@keyframes disperse {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(calc(100px - 200px * var(--x)), calc(100px - 200px * var(--y))) scale(0.5);
+        opacity: 0;
+    }
+}
+
 
 .hoverIcon {
     display: inline-block;
@@ -55,8 +108,8 @@ body {
 
 
 .h1TitleText {
-    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-    background-size: cover;
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2gyb2YwamlzaXg5bHNxM3I1NXB2aDJ6OWd2bGs1enBoZWM4OHh5cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U3qYN8S0j3bpK/giphy.gif);
+    background-position: center;
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
@@ -64,6 +117,7 @@ body {
     font-size: 120px;
     margin: 10px 0;
     text-indent: 4%;
+    text-align: center;
 }
 
 h6,
@@ -86,12 +140,12 @@ h1,
 }
 
 a {
-    color: #F78521;
+    color: #ecd078;
     text-decoration: none;
 }
 
 a:hover {
-    color: #E35540;
+    color: white;
 
 }
 
@@ -290,19 +344,11 @@ footer.fixed-bottom {
     margin-top: 5vh;
 }
 
-.h1TitleText {
-    font-size: 5rem !important;
-
-}
-
 .h2SubtitleText {
     font-size: 1.5rem !important;
     color: black;
 }
 
-.betterLineHeight {
-    line-height: 7rem;
-}
 
 /* make the text below file icons display on hover */
 
@@ -330,7 +376,7 @@ footer.fixed-bottom {
     }
 
     .h1TitleText {
-        font-size: 7rem !important;
+        font-size: 10rem !important;
     }
 
     .h2SubtitleText {
@@ -355,10 +401,6 @@ footer.fixed-bottom {
 
     .dynamicFileImg {
         max-width: 15vw;
-    }
-
-    #home {
-        background-size: 100%;
     }
 
     .subTitle {

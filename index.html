@@ -103,29 +103,25 @@
         <section id="home">
             <div class="container">
                 <div class="row" id="home-info">
-                    <div class="col-md-8">
-                        <h1 class="h1TitleText betterLineHeight ms-5">Anya Balan</h1>
-                        <h2 class="h1 text-center">Software Developer</h2>
-                    </div>
+                    <div class="col-12">
+                        <h1 class="h1TitleText">Anya Balan</h1>
+                        <h2 class="h1 text-center mb-4">Software Developer</h2>
+                        <div class="text-center" style="margin-left: -70px;">
+                            <div class="hoverIcon">
+                                <a href="/img/Balan125Resume.pdf" target="_blank" class="bubbly-button">
+                                    <img style="height: 45px; margin-bottom: 5px; margin-left: -3px;"src="/img/Designer.png">
+                                    Open Résumé</a>
+                            </div>
+                        </div>
+                    </div>                    
                     <!-- <div class="col-md-4 text-center">
                         <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.41/build/spline-viewer.js"></script>
-<spline-viewer loading-anim-type="spinner-small-light" url="https://prod.spline.design/2HCelEJiArQAGSN4/scene.splinecode"></spline-viewer>
+                        <spline-viewer loading-anim-type="spinner-small-light" url="https://prod.spline.design/2HCelEJiArQAGSN4/scene.splinecode"></spline-viewer>
                     </div> -->
-              
-                    
-                    <div class="col-md-4 text-center">
-                        <div class="hoverIcon">
-                            <a href="/img/Balan125Resume.pdf" target="_blank">
-                                <img src="/img/Balan125Resume.png" class="dynamicFileImg" />
-                                <div><strong>Resume</strong></div>
-                            </a>
-                        </div>
-                    </div>
+                       
                 </div>
                
             </div>
-            
-
         </section>
 
 
@@ -151,7 +147,7 @@
                                 <!-- content of card -->
                                 <p>
                                     I use C#, as well as industry-standard design patterns like MVC, to create dynamic
-                                    applications. View my main <a href="#projects">Projects</a> section
+                                    applications. View the <a href="#projects">Projects</a> section
                                     to see examples.
                                 </p>
                             </div>
@@ -180,8 +176,8 @@
                             <div class="icon-card-body">
                                 <!-- content of card -->
                                 <p>
-                                    For front-end development, I use HTML and CSS, as well as Bootstrap 5 to enhance the
-                                    look and layout of my projects, and bring consistensy to their design.
+                                    For the front-end, I use HTML and CSS, as well as Bootstrap 5 to enhance the
+                                    look and layout of projects, and bring consistency to their design.
                                 </p>
                             </div>
                         </div>
@@ -201,9 +197,8 @@
                             <div class="icon-card-body">
                                 <!-- content of card -->
                                 <p>
-                                    I use JavaScript to bring websites to life, and make them fully interactive. Check
-                                    out my
-                                    <a href="#projects">Projects</a> section to learn more.
+                                    I use JavaScript and JQuery to bring websites to life, and make them fully interactive. Take a look in the
+                                    <a href="#projects">Projects</a> section.
                                 </p>
 
                             </div>
@@ -887,6 +882,40 @@
     </script>
 
     <script src="js/blogApi.js"></script>
+
+    <script>
+        const bubblyButton = document.querySelector('.bubbly-button');
+
+bubblyButton.addEventListener('mouseenter', () => {
+    for (let i = 0; i < 10; i++) {
+        const bubble = document.createElement('span');
+        bubble.classList.add('bubble');
+
+        // Randomize size
+        const size = Math.random() * 20 + 5;
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+
+        // Randomize direction
+        const x = Math.random();
+        const y = Math.random();
+        bubble.style.setProperty('--x', x);
+        bubble.style.setProperty('--y', y);
+
+        // Set random position
+        bubble.style.left = `${Math.random() * 100}%`;
+        bubble.style.top = `${Math.random() * 100}%`;
+
+        bubblyButton.appendChild(bubble);
+
+        // Remove bubble after animation
+        bubble.addEventListener('animationend', () => {
+            bubble.remove();
+        });
+    }
+});
+
+    </script>
 
 </body>
 
