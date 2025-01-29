@@ -1,7 +1,7 @@
 function fetchBlogData() {
     const baseUrl = 'https://intheweedsblog-production.up.railway.app';
 
-    fetch(`${baseUrl}/api/BlogPosts/4`)
+    fetch(`${baseUrl}/api/BlogPosts/3`)
         .then((response) => response.json())
         .then(function (data) {
             displayBlogData(data, baseUrl);
@@ -43,18 +43,18 @@ if (blogPost.imageData && blogPost.imageType) {
         let blogTitleDiv = blogPostCard.querySelector('[data-blog="title"]');
         blogTitleDiv.innerHTML = blogPost.title;
 
-        let blogDate = new Date(blogPost.dateCreated); // 2009-11-10
-        let month = blogDate.toLocaleString('default', { month: 'long' });
-        let day = blogDate.getDate();
+        // let blogDate = new Date(blogPost.dateCreated); // 2009-11-10
+        // let month = blogDate.toLocaleString('default', { month: 'long' });
+        // let day = blogDate.getDate();
 
-        //add day
-        let blogDayDiv = blogPostCard.querySelector('[data-blog="day"]');
-        blogDayDiv.innerHTML = day;
+        // //add day
+        // let blogDayDiv = blogPostCard.querySelector('[data-blog="day"]');
+        // blogDayDiv.innerHTML = day;
 
-        //add month
-        let blogMonthDiv = blogPostCard.querySelector('[data-blog="month"]');
+        // //add month
+        // let blogMonthDiv = blogPostCard.querySelector('[data-blog="month"]');
 
-        blogMonthDiv.innerHTML = month;
+        // blogMonthDiv.innerHTML = month;
 
         //add content
         let blogContentDiv = blogPostCard.querySelector('[data-blog="content"]');
@@ -67,19 +67,19 @@ if (blogPost.imageData && blogPost.imageType) {
             `${baseUrl}/content/${blogPost.slug}`
         );
 
-        let blogPubDate = blogPostCard.querySelector('[data-blog="publishedDate"]');
+        // let blogPubDate = blogPostCard.querySelector('[data-blog="publishedDate"]');
 
-        let dateToday = new Date();
-        let createdDate = new Date(
-            blogPost.updated != null ? blogPost.updated : blogPost.Created
-        );
-        let diffTime = Math.abs(dateToday.getTime() - createdDate.getTime());
-        let lastupdated = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-        if (lastupdated == 1) {
-            blogPubDate.innerHTML = `Published ${lastupdated} day ago`;
-        } else {
-            blogPubDate.innerHTML = `Published ${lastupdated} days ago`;
-        }
+        // let dateToday = new Date();
+        // let createdDate = new Date(
+        //     blogPost.updated != null ? blogPost.updated : blogPost.Created
+        // );
+        // let diffTime = Math.abs(dateToday.getTime() - createdDate.getTime());
+        // let lastupdated = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        // // if (lastupdated == 1) {
+        //     blogPubDate.innerHTML = `Published ${lastupdated} day ago`;
+        // } else {
+        //     blogPubDate.innerHTML = `Published ${lastupdated} days ago`;
+        // }
 
         blogSection.appendChild(blogPostCard);
     });
