@@ -145,8 +145,16 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: #fdd22c;
 
+}
+
+try-btn {
+    color: black;
+}
+
+.bubbly-button:hover {
+    color: black;
 }
 
 section {
